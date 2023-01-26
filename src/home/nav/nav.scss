@@ -6,7 +6,7 @@ nav {
 
     position: relative;
     width: 100vw;
-    background-image: url('/img/back_crowd.png');
+    background-image: url('/img/navbar/back_crowd.png');
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -115,28 +115,24 @@ nav {
     }
 
     .menus {
+        position: relative;
         opacity: 1;
         margin-top: calc(10vh - $buttons-diameter / 4);
-        padding-right: calc($buttons-diameter / 2);
+        padding-right: calc($buttons-diameter);
         display: flex;
         gap: 5px;
         justify-content: flex-end;
 
         & > div {
+            position: relative;
             width: $buttons-diameter;
             height: $buttons-diameter;
-            border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
-
-            &.green {
-                background-color: $green;
-            }
-
-            &.yellow {
-                background-color: $orange;
-            }
+            background-color: $orange;
+            border-radius: 50%;
+            padding: 5px;
         }
     }
 
@@ -175,6 +171,12 @@ nav {
             &:first-child {
                 margin-top: 0;
             }
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+            }
         }
     }
 
@@ -194,10 +196,15 @@ nav {
             display: flex;
             justify-content: center;
             align-items: center;
-            svg {
-                $ratio: 0.6;
-                width: calc($buttons-diameter * $ratio);
-                height: calc($buttons-diameter * $ratio);
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                svg {
+                    $ratio: 0.6;
+                    width: calc($buttons-diameter * $ratio);
+                    height: calc($buttons-diameter * $ratio);
+                }
             }
         }
     }
