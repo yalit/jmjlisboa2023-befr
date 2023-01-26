@@ -1,0 +1,42 @@
+@import './tailwind.scss';
+
+// Colors
+$green: #00893e;
+$orange: #fbc200;
+$red: #d43425;
+
+@font-face {
+  font-family: 'donJose';
+  src: url('/fonts/DonJose_Black.otf') format('opentype');
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'lilitaOne';
+    src: url('/fonts/LilitaOne-Regular.ttf');
+}
+
+:root {
+  font-family: 'lilitaOne', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.text-green {color: $green}
+.text-red {color: $red}
+.text-orange {color: $orange}
+
+.background-green {background-color: $green}
+.background-red {background-color: $red}
+.background-orange {background-color: $orange}
