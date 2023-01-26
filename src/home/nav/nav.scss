@@ -1,0 +1,86 @@
+
+nav {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url('img/back_crowd.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+
+    * {
+        position: relative;
+    }
+
+    .halo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+        background-color: rgb(194, 12, 27);
+        opacity: 0.8;
+    }
+
+    .top-white-banner {
+        position: absolute;
+        top: -90vh;
+        right: 0;
+        width: 200vw;
+        height: 100vh;
+        background-color: #fff;
+        transform-origin: bottom right;
+        transform: rotate(-15deg) translateX(10vh);
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            
+            .logos {
+                position: absolute;
+                bottom: -30px;
+                right: 40%;
+                display: flex;
+                gap: 0;
+
+                & > div {
+                    padding: 0;
+                    margin: 0;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 50%;
+                    background-color: white;
+                    &:last-child {
+                        width: 80px;
+                        height: 80px;
+                        margin-top: 10px;
+                        margin-left: -20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .buttons {
+        $size: 40px;
+        opacity: 1;
+        margin-top: calc(10vh - $size / 4);
+        padding-right: $size / 2;
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+
+        & > div {
+            width: $size;
+            height: $size;
+            border-radius: 50%;
+
+            &.green {
+                background-color: green;
+            }
+
+            &.yellow {
+                background-color: yellow;
+            }
+        }
+    }
+}
