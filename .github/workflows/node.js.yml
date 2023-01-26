@@ -44,3 +44,12 @@ jobs:
       
     - name: Create the build
       run: pnpm run build
+    
+    - name: Install SSH Key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.DEPLOY_SSH_KEY }} 
+        known_hosts: 'just-a-placeholder-so-we-dont-get-errors'
+    
+    - name: Deploy with rsync
+      run: rsync -avz ./dist/ ${{ secrets.DEPLOY_SSH_USER }}@${{ secrets.DEPLOY_SSH_HOST }}:${{ secrets.DEPLOY_SSH_FOLDER }}
