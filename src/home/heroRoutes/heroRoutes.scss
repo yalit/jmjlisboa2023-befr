@@ -1,0 +1,37 @@
+@import '../../_base.scss';
+
+#heroRoutes {
+    .allroads {
+        @extend .text-red;
+        font-family: donJose;
+        font-size: $large;
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .carousel {
+        $imgSize: 12vw;
+        width: calc(100vw + $imgSize);
+        margin-left: calc($imgSize * 0.75 * -1);
+        a {
+            margin-left: calc($imgSize / 2);
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+
+    .action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+        p {
+            @extend .background-red, .text-white;
+            font-size: $medium;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    }
+}
