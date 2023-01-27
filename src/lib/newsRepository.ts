@@ -20,17 +20,21 @@ export function findLastNews(): Promise<Array<News>> {
 
 function extractNewsFromAPI(data: []): Promise<News>[] {
     return data.map((d: any): Promise<News> => {
-        return new Promise((res, rej) => {
-            getMedia(d.featured_media)
-            .then((media: Media) => {
-                res({
-                    id: d.id,
-                    title: d.title.rendered,
-                    url: d.link,
-                    img: media
-                })
-            })
-            .catch(res)
-        });
+        return extractOneNewsFromAPI(d);
     })
+}
+
+function extractOneNewsFromAPI(news: any): Promise<News> {
+    return new Promise((res, rej) => {
+        getMedia(news.featured_media)
+        .then((media: Media) => {
+            res({
+                id: news.id,
+                title: news.title.rendered,
+                url: news.link,
+                img: media
+            })
+        })
+        .catch(res)
+    });
 }
