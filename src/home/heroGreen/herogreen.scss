@@ -16,7 +16,7 @@ $margin: 3rem;
             position: relative;
             font-family: donJose;
             line-height: 0.8;
-            font-size: 2rem;
+            font-size: $large;
             font-weight: bold;
             & > div {
                 position: relative;
@@ -46,7 +46,7 @@ $margin: 3rem;
             & > div {
                 display: inline-flex;
                 padding: 0.8rem 1rem 0.5rem 1rem;
-                font-size: 1.4rem;
+                font-size: $medium;
                 background-color: white;
                 border-radius: 0.5rem;
                 color: $red;
@@ -73,7 +73,7 @@ $margin: 3rem;
         }
 
         p {
-            font-size: 1.2rem;
+            font-size: $normal;
         }
     }
 

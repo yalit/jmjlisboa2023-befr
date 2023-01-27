@@ -5,6 +5,13 @@ $green: #00893e;
 $orange: #fbc200;
 $red: #d43425;
 
+// Font sizes
+$xl : 2.5rem;
+$large : 2rem;
+$medium : 1.5rem;
+$normal : 1.2rem;
+$small : 1rem;
+
 @font-face {
   font-family: 'donJose';
   src: url('/fonts/DonJose_Black.otf') format('opentype');
@@ -36,7 +43,9 @@ $red: #d43425;
 .text-green {color: $green}
 .text-red {color: $red}
 .text-orange {color: $orange}
+.text-white {color: white}
 
 .background-green {background-color: $green}
 .background-red {background-color: $red}
 .background-orange {background-color: $orange}
+

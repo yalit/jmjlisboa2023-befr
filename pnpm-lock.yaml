@@ -11,12 +11,16 @@ specifiers:
   postcss: ^8.4.21
   sass: ^1.57.1
   svelte: ^3.54.0
+  svelte-carousel: ^1.0.22
   svelte-check: ^2.10.0
   svelte-inview: ^3.0.2
   tailwindcss: ^3.2.4
   tslib: ^2.4.1
   typescript: ^4.9.3
   vite: ^4.0.0
+
+dependencies:
+  svelte-carousel: 1.0.22
 
 devDependencies:
   '@fortawesome/fontawesome-svg-core': 6.2.1
@@ -708,6 +712,18 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /lodash.clonedeep/4.5.0:
+    resolution: {integrity: sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==}
+    dev: false
+
+  /lodash.get/4.4.2:
+    resolution: {integrity: sha512-z+Uw/vLuy6gQe8cfaFWD7p0wVv8fJl3mbzXh33RS+0oW2wvUqiRXiQ69gLWSLpgB5/6sU+r6BlQR0MBILadqTQ==}
+    dev: false
+
+  /lodash.isequal/4.5.0:
+    resolution: {integrity: sha512-pDo3lu8Jhfjqls6GkMgpahsF9kCyayhgykjyLMNFTKWrpVdAQtYyB4muAMWozBB4ig/dtWAmsMxLEI8wuz+DYQ==}
+    dev: false
+
   /magic-string/0.25.9:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
     dependencies:
@@ -1016,6 +1032,12 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
+  /svelte-carousel/1.0.22:
+    resolution: {integrity: sha512-s00UL7lhAIQACooM4xYW5LdNbwKztdpYZLnRyW0qL0vdaZayLeiHsZj/JxQZHk9vbddVqGo1kn+pQSaSVhJqWA==}
+    dependencies:
+      simply-reactive: github.com/vadimkorr/simply-reactive/8d1ae831b2fbba1cf4446543f954b4efe28013e0
+    dev: false
+
   /svelte-check/2.10.3_4xcsxbgwqdrvcryxlywpxdpbsu:
     resolution: {integrity: sha512-Nt1aWHTOKFReBpmJ1vPug0aGysqPwJh2seM1OvICfM2oeyaA62mOiy5EvkXhltGfhCcIQcq2LoE0l1CwcWPjlw==}
     hasBin: true
@@ -1243,3 +1265,13 @@ packages:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
     dev: true
+
+  github.com/vadimkorr/simply-reactive/8d1ae831b2fbba1cf4446543f954b4efe28013e0:
+    resolution: {tarball: https://codeload.github.com/vadimkorr/simply-reactive/tar.gz/8d1ae831b2fbba1cf4446543f954b4efe28013e0}
+    name: simply-reactive
+    version: 1.0.0
+    dependencies:
+      lodash.clonedeep: 4.5.0
+      lodash.get: 4.4.2
+      lodash.isequal: 4.5.0
+    dev: false

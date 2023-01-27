@@ -1,0 +1,64 @@
+@import '../../_base.scss';
+
+#heroRoutes {
+    background-color: white;
+    
+    .allroads {
+        @extend .text-red;
+        font-family: donJose;
+        font-size: $large;
+        text-align: center;
+        padding: 3rem;
+    }
+
+    .carousel {
+        position: relative;
+        width: 100vw;
+        a {
+            margin-left: 20px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        .dot {
+            $size: 2rem;
+            opacity: 0;
+            position: absolute;
+            width: $size;
+            height: $size;
+            border-radius: 50%;
+            top: calc(50% - ($size / 2));
+            background-color: rgba($red, 0.75);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+            cursor: pointer;
+            &.prev {
+                left: $size;
+            }
+            &.next {
+                right: $size;
+            }
+        }
+        &:hover {
+            .dot {
+                opacity: 1 !important;
+            }
+        }
+    }
+
+    .action {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
+        p {
+            @extend .background-red, .text-white;
+            font-size: $medium;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    }
+}
