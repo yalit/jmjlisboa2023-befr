@@ -22,7 +22,7 @@
         }
         .dot {
             $size: 2rem;
-            opacity: 0;
+            opacity: 1; // opacity should be 0 when on landcape mode ==> to be done when doing the computer version
             position: absolute;
             width: $size;
             height: $size;
