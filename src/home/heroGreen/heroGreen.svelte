@@ -31,9 +31,15 @@
         </div>
 
         <div class="actions">
-            <div class="action">Découvre les JMJ</div>
-            <div class="action">Je suis déjà inscrit⸱e</div>
-            <div class="action">Regarde le message du Page aux jeunes inscrits</div>
+            <div class="action">
+                <a href="#">Découvre les JMJ</a>
+            </div>
+            <div class="action">
+                <a href="#">Je suis déjà inscrit⸱e</a>
+            </div>
+            <div class="action">
+                <a href="#">Regarde le message du Page aux jeunes inscrits</a>
+            </div>
         </div>
     </div>
 
