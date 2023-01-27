@@ -46,6 +46,14 @@
             return 5;
         }
     }
+
+    let carousel;
+    function goToPrev() {
+        carousel.goToPrev()
+    };
+    function goToNext() {
+        carousel.goToNext()
+    };
 </script>
 
 <svelte:window on:resize={handleResize}/>
@@ -59,27 +67,27 @@
 
         <div class="carousel">
             <Carousel
+                bind:this={carousel}
                 particlesToShow={nbImagesToDisplay}
                 particlesToScroll={1}
+                arrows={false}
                 dots={false}
                 swiping={true}
-                let:showPrevPage
-                let:showNextPage
             >
                 {#each images as image}
                     <a href="{image.link}" target="_blank" rel="noreferrer">
                         <img src="{image.url}" alt="{image.alt}" />
                     </a>  
                 {/each}
-                <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <div slot="prev" on:click={showPrevPage} class="dot prev">
-                    <FontAwesomeIcon icon={faAngleLeft}/>
-                </div>
-                <!-- svelte-ignore a11y-click-events-have-key-events -->
-                <div slot="next" on:click={showNextPage} class="dot next">
-                    <FontAwesomeIcon icon={faAngleRight}/>
-                  </div>
             </Carousel>
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <div on:click={goToNext} class="dot left">
+                <FontAwesomeIcon icon={faAngleLeft}/>
+            </div>
+            <!-- svelte-ignore a11y-click-events-have-key-events -->
+            <div on:click={goToPrev} class="dot right">
+                <FontAwesomeIcon icon={faAngleRight}/>
+              </div>
         </div>
 
         <div class="action">
