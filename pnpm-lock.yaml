@@ -12,6 +12,7 @@ specifiers:
   sass: ^1.57.1
   svelte: ^3.54.0
   svelte-check: ^2.10.0
+  svelte-inview: ^3.0.2
   tailwindcss: ^3.2.4
   tslib: ^2.4.1
   typescript: ^4.9.3
@@ -29,6 +30,7 @@ devDependencies:
   sass: 1.57.1
   svelte: 3.55.1
   svelte-check: 2.10.3_4xcsxbgwqdrvcryxlywpxdpbsu
+  svelte-inview: 3.0.2_svelte@3.55.1
   tailwindcss: 3.2.4_postcss@8.4.21
   tslib: 2.4.1
   typescript: 4.9.4
@@ -1047,6 +1049,14 @@ packages:
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
     peerDependencies:
       svelte: '>=3.19.0'
+    dependencies:
+      svelte: 3.55.1
+    dev: true
+
+  /svelte-inview/3.0.2_svelte@3.55.1:
+    resolution: {integrity: sha512-QdMGe8oE/dsoqbQHppeNgz9zK0Ahir+RYDqw5JwKJcbdzLOkgPGp0Dzt8c9PIdEQXoJD+piOeMGdQGrCmlyMag==}
+    peerDependencies:
+      svelte: ^3.0.0
     dependencies:
       svelte: 3.55.1
     dev: true
