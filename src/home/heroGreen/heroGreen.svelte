@@ -9,7 +9,6 @@
     let delta: number = 0;
     const handleChange = ({ detail }: CustomEvent<ObserverEventDetails>) => {
         isInView = detail.inView
-        console.log(detail.entry.intersectionRatio)
         delta = detail.entry.intersectionRatio / 2
     };
 
