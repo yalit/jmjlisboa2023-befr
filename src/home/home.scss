@@ -20,3 +20,23 @@
         }
     }
 }
+
+.hookup {
+    font-family: donJose;
+    font-size: $medium;
+    line-height: 1.25; 
+}
+
+.emphasized {
+    border-radius: 5px;
+    padding: 0 5px;   
+    &.red {
+        @extend .background-red, .text-white;
+    }        
+    &.orange {
+        @extend .background-orange, .text-white;
+    }
+    &.green {
+        @extend .background-green, .text-white;
+    }
+}

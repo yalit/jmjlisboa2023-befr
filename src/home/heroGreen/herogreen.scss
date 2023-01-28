@@ -9,36 +9,10 @@ $margin: 3rem;
     width: 100vw;
     overflow: hidden;
 
-    .content {
+    .youtoo {
         position: relative;
         padding: $margin;
-        .parole {
-            position: relative;
-            font-family: donJose;
-            line-height: 0.8;
-            font-size: $large;
-            font-weight: bold;
-            & > div {
-                position: relative;
-            }
-            .emphasized {
-                p {position: relative;}
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 2rem;
-                    background-color: $red;
-                    border-radius: 0.5rem;
-                    width: 50%;
-                    height: 4.5rem;
-                }
-            }
-        }
-        .actions {
-            padding-left: 0;
-            padding-right: 0;
-        }
+        padding-bottom: 0; 
     }
 
     .knowmore {

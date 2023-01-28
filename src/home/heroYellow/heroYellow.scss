@@ -4,6 +4,7 @@
     @extend .background-orange;
     overflow: hidden;
     padding-bottom: 3rem;
+    
     .top-image {
         @extend .background-white;
         position: relative;
@@ -25,15 +26,8 @@
     }
 
     .whilewaiting {
-        font-family: donJose;
-        font-size: $medium;
-        padding: 0 6rem 0 2rem;
-        line-height: 1.25; 
-        .emphasized {
-            @extend .background-red;
-            border-radius: 5px;
-            padding: 0 5px;           
-        }
+        margin-top: -10vw;
+        padding: 0 30vw 5vw 10vw;
     }
 
     .lastnews {
