@@ -8,8 +8,8 @@
 
         </div>
 
-        <div class="1000questions">
-            <p>Tu te poses <span class="emphasized">1000 questions</span> sur ce périple ?</p>
+        <div class="askingquestions hookup">
+            Tu te poses <br /><span class="emphasized orange">1000 questions</span> sur ce périple ?
         </div>
 
         <div class="actions">
