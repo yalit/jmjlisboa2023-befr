@@ -35,26 +35,9 @@ $margin: 3rem;
                 }
             }
         }
-
         .actions {
-            margin-top: $margin;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            align-items: flex-start;
-
-            & > div {
-                display: inline-flex;
-                padding: 0.8rem 1rem 0.5rem 1rem;
-                font-size: $medium;
-                background-color: white;
-                border-radius: 0.5rem;
-                color: $red;
-                &:nth-child(2n) {
-                    background: none;
-                    color: white;
-                }
-            }
+            padding-left: 0;
+            padding-right: 0;
         }
     }
 

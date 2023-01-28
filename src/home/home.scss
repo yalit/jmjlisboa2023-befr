@@ -1,1 +1,22 @@
 @import '../_base.scss';
+
+.actions {
+    font-size: $normal;
+    padding: 3rem calc((100vw - 75vw) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .action {
+        @extend .text-red, .background-white;
+        display: inline-flex;
+        padding: 10px;
+        border-radius: 5px;
+        text-align: center;
+        &:nth-child(2n) {
+            @extend .text-white;
+            background: none;
+        }
+    }
+}

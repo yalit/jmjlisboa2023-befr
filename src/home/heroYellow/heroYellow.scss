@@ -68,25 +68,4 @@
             }
         }
     }
-
-    .actions {
-        font-size: $normal;
-        margin-top: 3rem;
-        padding: 0 calc((100vw - 75vw) / 2);
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        
-        .action {
-            @extend .text-red, .background-white;
-            display: inline-flex;
-            padding: 10px;
-            border-radius: 5px;
-            text-align: center;
-            &:nth-child(2n) {
-                @extend .text-white, .background-orange;
-            }
-        }
-    }
 }
