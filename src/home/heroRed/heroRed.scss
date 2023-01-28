@@ -1,0 +1,11 @@
+@import '../../_base.scss';
+
+#heroRed {
+    @extend .background-red, .text-white;
+
+    border-bottom: 5rem solid white;
+
+    .askingquestions {
+        padding: 2rem 40vw 0 10vw;
+    }
+}

@@ -20,10 +20,8 @@
             <img src="/img/heroYellow/angryWindow.svg" alt="Internet tab and angry icons and emoticons">
         </div>
 
-        <div class="whilewaiting">
-            <p>
-                En attendant notre rencontre, découvre sur <a href="https://church4you.be" class="emphasized">church4you.be</a> un coin d'internet <span class="emphasized">bienveillant et spi</span>.
-            </p>
+        <div class="whilewaiting hookup">
+            En attendant notre rencontre, découvre sur <a href="https://church4you.be" class="emphasized red">church4you.be</a> un coin d'internet <span class="emphasized red">bienveillant et spi</span>
         </div>
 
         <div class="lastnews">

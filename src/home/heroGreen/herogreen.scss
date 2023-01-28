@@ -9,53 +9,10 @@ $margin: 3rem;
     width: 100vw;
     overflow: hidden;
 
-    .content {
+    .youtoo {
         position: relative;
         padding: $margin;
-        .parole {
-            position: relative;
-            font-family: donJose;
-            line-height: 0.8;
-            font-size: $large;
-            font-weight: bold;
-            & > div {
-                position: relative;
-            }
-            .emphasized {
-                p {position: relative;}
-                &::before {
-                    content: "";
-                    position: absolute;
-                    top: 0;
-                    left: 2rem;
-                    background-color: $red;
-                    border-radius: 0.5rem;
-                    width: 50%;
-                    height: 4.5rem;
-                }
-            }
-        }
-
-        .actions {
-            margin-top: $margin;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            align-items: flex-start;
-
-            & > div {
-                display: inline-flex;
-                padding: 0.8rem 1rem 0.5rem 1rem;
-                font-size: $medium;
-                background-color: white;
-                border-radius: 0.5rem;
-                color: $red;
-                &:nth-child(2n) {
-                    background: none;
-                    color: white;
-                }
-            }
-        }
+        padding-bottom: 0; 
     }
 
     .knowmore {
