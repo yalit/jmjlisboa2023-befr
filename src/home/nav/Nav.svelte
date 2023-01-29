@@ -28,7 +28,10 @@
     <div class="bottom-left-banner"></div>
 
     <div class="menus">
-        <div>
+        <div class="green">
+            <FontAwesomeIcon icon={faBars} />
+        </div>
+        <div class="orange">
             <img src="/img/navbar/ticket.svg" alt="Ticket pour les JMJ">
         </div>
     </div> 
