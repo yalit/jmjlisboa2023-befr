@@ -3,7 +3,7 @@
   import HeroGreen from "./heroGreen/heroGreen.svelte";
   import HeroRoutes from "./heroRoutes/heroRoutes.svelte";
   import HeroRed from "./heroRed/heroRed.svelte";
-  import HeroYellow from "./heroYellow/heroYellow.svelte";
+  import HeroOrange from "./heroOrange/heroOrange.svelte";
   import Footer from "./footer/footer.svelte";
 </script>
 
@@ -11,5 +11,5 @@
 <HeroGreen />
 <HeroRoutes />
 <HeroRed />
-<HeroYellow />
+<HeroOrange />
 <Footer />
