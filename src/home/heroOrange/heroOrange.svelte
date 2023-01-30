@@ -1,5 +1,5 @@
 <script>
-    import './heroYellow.scss';
+    import './heroOrange.scss';
     import { onMount } from 'svelte';
     import { findLastNews } from '../../lib/newsRepository';
 
@@ -16,12 +16,16 @@
 
 <section id="heroYellow">
     <div class="section-container">
-        <div class="top-image">
-            <img src="/img/heroYellow/angryWindow.svg" alt="Internet tab and angry icons and emoticons">
-        </div>
-
-        <div class="whilewaiting hookup">
-            En attendant notre rencontre, découvre sur <a href="https://church4you.be" class="emphasized red">church4you.be</a> un coin d'internet <span class="emphasized red">bienveillant et spi</span>
+        <div class="intro">
+            <div class="top-image">
+                <img src="/img/heroYellow/angryWindow.svg" alt="Internet tab and angry icons and emoticons">
+            </div>
+    
+            <div class="whilewaiting hookup">
+                <p>
+                    En attendant notre rencontre, découvre sur <a href="https://church4you.be" class="emphasized red">church4you.be</a> un coin d'internet <span class="emphasized red">bienveillant et spi</span>
+                </p>
+            </div>
         </div>
 
         <div class="lastnews">
