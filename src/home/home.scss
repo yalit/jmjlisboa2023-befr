@@ -21,6 +21,14 @@
     }
 }
 
+@media screen and (min-width: $mediaSmall) {
+    .actions {
+        .action {
+            padding: 1.5rem 10px;
+        }
+    }
+}
+
 .hookup {
     font-family: donJose;
     font-size: var(--medium);

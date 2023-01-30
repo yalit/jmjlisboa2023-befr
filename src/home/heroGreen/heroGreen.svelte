@@ -22,33 +22,33 @@
 
 <section id="herogreen">
     <div class="section-container">
-        <div class="youtoo hookup">
-            <div class="div">Si toi aussi comme le dis <span class="emphasized red">le pape François</span>, tu as soif d'horizon</div>
-            <div class="div">Alors quitte tes 4 murs !</div>
-        </div>
+        <div class="text-part">
+            <div class="youtoo hookup">
+                <div class="div">Si toi aussi comme le dis <span class="emphasized red">le pape François</span>:<br /> tu as soif d'horizon</div>
+                <div class="div">Alors quitte tes 4 murs !</div>
+            </div>
+            
+            <div class="actions">
+                <div class="action">
+                    <a href="#">Découvre les JMJ</a>
+                </div>
+                <div class="action">
+                    <a href="#">Je suis déjà inscrit⸱e</a>
+                </div>
+                <div class="action">
+                    <a href="#">Regarde le message du Page aux jeunes inscrits</a>
+                </div>
+            </div>
         
-        <div class="actions">
-            <div class="action">
-                <a href="#">Découvre les JMJ</a>
-            </div>
-            <div class="action">
-                <a href="#">Je suis déjà inscrit⸱e</a>
-            </div>
-            <div class="action">
-                <a href="#">Regarde le message du Page aux jeunes inscrits</a>
-            </div>
-        </div>
-    
-        <div class="knowmore">
-            <FontAwesomeIcon icon={faArrowDown} />
-            <p>En savoir plus sur les JMJ depuis la Belgique</p>
+            <a href="#" class="knowmore">
+                    <FontAwesomeIcon icon={faArrowDown} />
+                    <p>En savoir plus sur les JMJ depuis la Belgique</p>
+            </a>
         </div>
     
         <div class="nerestepasici">
-            <div class="back"></div>
-            <div class="bottom">
-    
-            </div>
+            <div class="white-back"></div>
+            <div class="border-white-bottom"></div>
             <div class="pasici">
                 <img src="/img/heroGreen/pasici.svg" alt="Ne reste pas ici, bouge !">
             </div>
@@ -56,7 +56,7 @@
                 <img src="/img/heroGreen/canape.svg" alt="Ne reste pas dans ton canapé!">
             </div>
             <div class="perso" use:inview={options} on:change="{handleChange}" style="transform: translateX(calc(200px * {delta}))">
-                <img src="/img/heroGreen/perso.svg" alt="Un personnage qui marche vers la droite de l'écran">
+                <a href="#"><img src="/img/heroGreen/perso.svg" alt="Un personnage qui marche vers la droite de l'écran"></a> <!-- put a link to the inscription form -->
             </div>
         </div>
     </div>
