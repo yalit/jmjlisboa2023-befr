@@ -30,7 +30,7 @@ $margin: 3rem;
         }
 
         p {
-            font-size: $normal;
+            font-size: var(--normal);
         }
     }
 

@@ -6,7 +6,7 @@
     .allroads {
         @extend .text-red;
         font-family: donJose;
-        font-size: $large;
+        font-size: var(--large);
         text-align: center;
         padding: 3rem;
     }
@@ -55,7 +55,7 @@
         padding: 3rem;
         p {
             @extend .background-red, .text-white;
-            font-size: $medium;
+            font-size: var(--medium);
             padding: 10px;
             border-radius: 10px;
             text-align: center;

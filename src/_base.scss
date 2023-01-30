@@ -10,23 +10,7 @@ $green: #00893e;
 $orange: #fbc200;
 $red: #d43425;
 
-// Font sizes
-$xl : 2.5rem;
-$large : 2rem;
-$medium : 1.5rem;
-$normal : 1.2rem;
-$small : 1rem;
-$tiny : 0.75rem;
 
-@media screen and (min-width: $mediaSmall) {
-  // Font sizes
-  $xl : 5rem;
-  $large : 3rem;
-  $medium : 2.5rem;
-  $normal : 1.8rem;
-  $small : 1.3rem;
-  $tiny : 1rem;    
-}
 
 @font-face {
   font-family: 'donJose';
@@ -54,6 +38,25 @@ $tiny : 0.75rem;
   -webkit-text-size-adjust: 100%;
   padding: 0;
   margin: 0;
+
+
+  // Font sizes
+  --xl : 2.5rem;
+  --large : 2rem;
+  --medium : 1.5rem;
+  --normal : 1.2rem;
+  --small : 1rem;
+  --tiny : 0.75rem;
+
+  @media screen and (min-width: $mediaSmall) {
+    // Font sizes
+    --xl : 5rem;
+    --large : 3rem;
+    --medium : 2.5rem;
+    --normal : 1.8rem;
+    --small : 1.3rem;
+    --tiny : 1rem;    
+  }
 }
 
 .text-green {color: $green}

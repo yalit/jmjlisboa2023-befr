@@ -1,7 +1,7 @@
 @import '../_base.scss';
 
 .actions {
-    font-size: $normal;
+    font-size: var(--normal);
     padding: 3rem calc((100vw - 75vw) / 2);
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@
 
 .hookup {
     font-family: donJose;
-    font-size: $medium;
+    font-size: var(--medium);
     line-height: 1.25; 
 }
 
