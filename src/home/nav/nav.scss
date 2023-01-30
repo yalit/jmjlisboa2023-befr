@@ -240,7 +240,7 @@ nav {
         }
 
         @media screen and (min-width: $mediaLarge) {
-            margin-top: -3rem;
+            margin-top: 0;
             font-size: 5rem;
             padding-left: calc($logo-diameter / 2);
         }
