@@ -11,6 +11,12 @@
         padding: 3rem;
     }
 
+    @media screen and (min-width: $mediaSmall) {
+        .allroads {
+            padding: 5rem 3rem;
+        }
+    }
+
     .carousel {
         position: relative;
         width: 100vw;
@@ -23,9 +29,9 @@
         .dot {
             position: absolute;
             $size: 2rem;
-            opacity: 1; // opacity should be 0 when on landcape mode ==> to be done when doing the computer version
+            opacity: 1;
             width: $size;
-            height: $size;
+            aspect-ratio: 1 / 1;
             border-radius: 50%;
             top: calc(50% - ($size / 2));
             background-color: rgba($red, 0.75);
@@ -40,10 +46,22 @@
             &.left {
                 left: $size;
             }
+            
         }
+
         &:hover {
             .dot {
-                opacity: 1 !important;
+                opacity: 1;
+            }
+        }
+
+        @media screen and (min-width: $mediaSmall) {
+            .dot {
+                opacity: 0;
+                width: 3rem;
+                svg {
+                    font-size: 1.5rem;
+                }
             }
         }
     }
@@ -59,6 +77,15 @@
             padding: 10px;
             border-radius: 10px;
             text-align: center;
+        }
+    }
+
+    @media screen and (min-width: $mediaSmall) {
+        .action {
+            padding: 5rem 3rem;
+            p {
+                padding: 1.5rem;
+            }
         }
     }
 }
