@@ -168,7 +168,7 @@ nav {
     .menus {
         position: relative;
         opacity: 1;
-        margin-top: calc(10vh - $buttons-diameter / 4);
+        padding-top: calc(10vh - $buttons-diameter / 4);
         padding-right: calc($buttons-diameter);
         display: flex;
         gap: 5px;
@@ -194,10 +194,9 @@ nav {
 
         @media screen and (min-width: $mediaSmall) {
             $buttons-diameter: 60px;
-            margin: 7.5vw;
-            padding: 0;
+            padding-top: 7.5vw;
+            padding-right: 7.5vw;
             gap: 10px;
-            margin-top: calc(10vh - $buttons-diameter / 5);
 
             & > div {
                 width: $buttons-diameter;
