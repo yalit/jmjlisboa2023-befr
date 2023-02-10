@@ -8,7 +8,18 @@
     let menuOpened = false
     const menuToggle = () => menuOpened = !menuOpened
 
+    const on_key_up = (event) => {
+      switch (event.key) {
+        case "Escape":
+          menuOpened = false;
+          event.preventDefault();
+          break;
+      }
+    }
+
 </script>
+
+<svelte:window on:keyup={on_key_up} />
 
 <Menu bind:opened={menuOpened} />
 

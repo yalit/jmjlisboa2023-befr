@@ -5,9 +5,9 @@
 
     export let opened: boolean;
     $: menuStatus = opened ? "opened" : "closed";
+
+
 </script>
-
-
 
 <div class="menu {menuStatus}">
     <div class="menu-container">
