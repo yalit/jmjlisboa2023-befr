@@ -24,7 +24,7 @@
     <div class="section-container">
         <div class="text-part">
             <div class="youtoo hookup">
-                <div class="div">Si toi aussi comme le dis <span class="emphasized red">le pape François</span>:<br /> tu as soif d'horizon</div>
+                <div class="div">Si toi aussi comme le dit<br /> <span class="emphasized red">le pape François</span><br /> tu as soif d'horizon</div>
                 <div class="div">Alors quitte tes 4 murs !</div>
             </div>
             

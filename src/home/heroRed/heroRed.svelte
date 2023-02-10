@@ -9,7 +9,7 @@
         </div>
 
         <div class="askingquestions hookup">
-            Tu te poses <br /><span class="emphasized orange">1000 questions</span> sur ce périple ?
+            Tu te poses <br /><span class="emphasized orange">1000 questions</span><br /> sur ce périple ?
         </div>
 
         <div class="actions">
