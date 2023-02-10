@@ -1,10 +1,16 @@
 <script lang="ts">
     import './nav.scss';
     import {FontAwesomeIcon} from '@fortawesome/svelte-fontawesome';
-    import {faBars, faQuestion, faAngleDoubleRight} from '@fortawesome/free-solid-svg-icons'
+    import {faBars, faTimes, faAngleDoubleRight} from '@fortawesome/free-solid-svg-icons'
     import {faInstagram, faYoutube, faFacebook} from '@fortawesome/free-brands-svg-icons'
+    import Menu from "./Menu.svelte";
+
+    let menuOpened = false
+    const menuToggle = () => menuOpened = !menuOpened
 
 </script>
+
+<Menu bind:opened={menuOpened} />
 
 <nav>
     <div class="section-container">
@@ -28,11 +34,15 @@
         <div class="bottom-right-banner"></div>
         <div class="bottom-left-banner"></div>
 
-        <div class="menus">
-            <div class="green">
-                <FontAwesomeIcon icon={faBars} />
+        <div class="action-buttons">
+            <div class="action-button green" on:click={menuToggle}>
+                {#if menuOpened}
+                    <FontAwesomeIcon icon={faTimes} />
+                {:else }
+                    <FontAwesomeIcon icon={faBars} />
+                {/if}
             </div>
-            <div class="orange">
+            <div class="action-button orange">
                 <img src="/img/navbar/ticket.svg" alt="Ticket pour les JMJ">
             </div>
         </div> 
@@ -41,23 +51,24 @@
             <p>pour les JMJ</p>
             <p>avec la belgique</p>
         </div>
-        <div class="secondary-title">
-            <div class="text-green">
+
+        <div class="main-menu">
+            <div class="text-green background-white">
                 <a href="#">
                     <span class="arrow-left"><FontAwesomeIcon icon={faAngleDoubleRight} /></span>
-                    Les JMJ c'est quoi ?
+                    <span>Les JMJ c'est quoi ?</span>
                 </a>
             </div>
-            <div class="text-red">
+            <div class="text-red background-white">
                 <a href="#">
                     <span class="arrow-left"><FontAwesomeIcon icon={faAngleDoubleRight} /></span>
-                    Différentes propositions
+                    <span>Différentes propositions</span>
                 </a>
             </div>
-            <div class="text-orange">
+            <div class="text-orange background-white">
                 <a href="#">
                     <span class="arrow-left"><FontAwesomeIcon icon={faAngleDoubleRight} /></span>
-                    Infos Church4You
+                    <span>Infos Church4You</span>
                 </a>
             </div>
         </div>
