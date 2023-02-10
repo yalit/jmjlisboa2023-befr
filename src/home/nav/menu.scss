@@ -6,7 +6,7 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 0vh;
+  height: 0;
   padding: 0;
   z-index: 10;
 
@@ -25,16 +25,28 @@
 
     div {
       display: inline-block;
-      padding: 1rem;
+      padding: 0.75rem;
       border-radius: 5px;
       font-size: var(--medium);
+      &.full {
+        padding: 1rem;
+      }
       a {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
       }
+
+      @media screen and (min-width: $mediaSmall) {
+        padding: 1rem;
+        &.full {
+          padding: 2rem;
+        }
+      }
     }
+
+
 
   }
 
