@@ -50,10 +50,10 @@
     let carousel;
     function goToPrev() {
         carousel.goToPrev()
-    };
+    }
     function goToNext() {
         carousel.goToNext()
-    };
+    }
 </script>
 
 <svelte:window on:resize={handleResize}/>
@@ -81,11 +81,11 @@
                 {/each}
             </Carousel>
             <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div on:click={goToNext} class="dot left">
+            <div on:click={goToPrev} class="dot left">
                 <FontAwesomeIcon icon={faAngleLeft}/>
             </div>
             <!-- svelte-ignore a11y-click-events-have-key-events -->
-            <div on:click={goToPrev} class="dot right">
+            <div on:click={goToNext} class="dot right">
                 <FontAwesomeIcon icon={faAngleRight}/>
               </div>
         </div>
