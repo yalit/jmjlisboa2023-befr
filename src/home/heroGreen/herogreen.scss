@@ -54,25 +54,23 @@ $margin: 3rem;
             transform: rotate(7deg);
         }
 
-        .border-white-bottom {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 65px;
-            background-color: white;
-        }
-
         .canape {
             position: relative;
             margin-top: -100%;
         }
 
         .perso {
-            margin-top: -95%;
-            transition: all 500ms ease;
+            margin: -65% 0 0 10vw;
+            transition: all 500ms ease-in-out;
+            img {
+                height: 500px;
+            }
+            @media screen and (min-width: $mediaSmall) {
+                margin-left: 5vw;
+            }
         }
     }
+
 
     @media screen and (min-width: $mediaSmall) {
         .section-container {
