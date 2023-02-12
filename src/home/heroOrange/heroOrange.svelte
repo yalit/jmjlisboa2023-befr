@@ -44,10 +44,10 @@
                 <a href="#">En savoir plus sur les JMJ</a>
             </div>
             <div class="action">
-                <a href="#">Tu ne pars pas auc JMJ ?</a>
+                <a href="#">Tu ne pars pas aux JMJ ?</a>
             </div>
             <div class="action">
-                <a href="#">Découvre pleins activités, groupes et outils sur C4Y.be</a>
+                <a href="#">Découvre pleins d'activités, groupes et outils sur C4Y.be</a>
             </div>
         </div>
     </div>
