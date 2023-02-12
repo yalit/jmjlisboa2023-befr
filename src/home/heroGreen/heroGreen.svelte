@@ -9,6 +9,7 @@
     let vh: number = visualViewport.height;
     let persoInitialRight;
     let movePerso: number = 0;
+    let persoAnimationBounds = {start: vh / 6 * 5, end: 0}
 
     $: { //handling move of perso on screen to the left
       if (perso !== undefined) {
@@ -17,8 +18,12 @@
         if (persoInitialRight === undefined) {
           persoInitialRight = perso.getBoundingClientRect().right;
         }
-        if (persoSizes.top + (persoSizes.height * 0.3) < vh) {
-          movePerso = (vh - persoSizes.top) * 0.25;
+
+        if (persoSizes.top < persoAnimationBounds.start) {
+          movePerso = (persoAnimationBounds.start-persoSizes.top)/(persoAnimationBounds.start - persoAnimationBounds.end) * persoSizes.width;
+          if (persoSizes.top < persoAnimationBounds.end) {
+            movePerso = persoSizes.width
+          }
         }
         perso.style.transform = `rotateY(180deg) translateX(${movePerso}px)`
       }

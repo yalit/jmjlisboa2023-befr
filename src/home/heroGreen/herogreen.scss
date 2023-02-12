@@ -60,13 +60,10 @@ $margin: 3rem;
         }
 
         .perso {
-            margin: -65% 0 0 10vw;
+            margin: -65% 0 0 0;
             transition: all 500ms ease-in-out;
             img {
                 height: 500px;
-            }
-            @media screen and (min-width: $mediaSmall) {
-                margin-left: 5vw;
             }
         }
     }
