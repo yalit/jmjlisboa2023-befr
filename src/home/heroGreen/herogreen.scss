@@ -6,31 +6,42 @@ $margin: 3rem;
     position: relative;
     color: white;
     background-color: rgb(30, 94, 30);
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
 
-    .youtoo {
-        position: relative;
-        padding: $margin;
-        padding-bottom: 0; 
-    }
-
-    .knowmore {
-        padding-left: calc($margin / 2);
+    .text-part {
         display: flex;
-        align-items: center;
-        gap: 1rem;
-
-        svg {
-            border: 1px solid white;
-            border-radius: 50%;
-            padding: 5px;
-            width: 1.5rem;
-            height: 1.5rem;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        .youtoo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            padding: $margin;
+            padding-bottom: 0;
         }
 
-        p {
-            font-size: var(--normal);
+        .knowmore {
+            padding: 0 calc($margin / 2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            svg {
+                border: 1px solid white;
+                border-radius: 50%;
+                padding: 5px;
+                width: 1.5rem;
+                height: 1.5rem;
+            }
+
+            p {
+                font-size: var(--normal);
+            }
         }
     }
 
@@ -60,10 +71,10 @@ $margin: 3rem;
         }
 
         .perso {
-            margin: -65% 0 0 0;
             transition: all 500ms ease-in-out;
             img {
-                height: 500px;
+                margin-top: -250px;
+                height: 250px;
             }
         }
     }
@@ -79,14 +90,24 @@ $margin: 3rem;
             }
 
             .text-part {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
                 gap: 3rem;
-
+                .youtoo {
+                    align-items: flex-start;
+                }
+                .knowmore {
+                    justify-content: flex-start;
+                    padding: 0 $margin;
+                }
                 .actions {
                     align-items: flex-start;
                     padding-left: $margin;
+                }
+            }
+
+            .perso {
+                img {
+                    margin-top: -500px;
+                    height: 500px;
                 }
             }
         }

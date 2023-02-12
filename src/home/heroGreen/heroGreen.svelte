@@ -9,7 +9,7 @@
     let vh: number = visualViewport.height;
     let persoInitialRight;
     let movePerso: number = 0;
-    let persoAnimationBounds = {start: vh / 6 * 5, end: 0}
+    let persoAnimationBounds = {start: vh / 3, end: 0}
 
     $: { //handling move of perso on screen to the left
       if (perso !== undefined) {

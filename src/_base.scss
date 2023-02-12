@@ -69,10 +69,15 @@ $red: #d43425;
 .background-orange {background-color: $orange}
 .background-white {background-color: white}
 
+section {
+  overflow-x: hidden;
+}
+
 .section-container {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
