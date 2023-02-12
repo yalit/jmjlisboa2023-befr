@@ -5,16 +5,84 @@
 
     border-bottom: 5rem solid white;
 
+    .animated-questions {
+        position: relative;
+        width: 100vw;
+        height: 90vw;
+        .white-back {
+            @extend .background-white;
+            position: absolute;
+            top: 0;
+            left: -35%;
+            width: 150%;
+            height: 100%;
+            aspect-ratio: 1;
+            border-radius: 50%;
+            transform: rotate(-30deg);
+        }
+        .heart {
+            position: absolute;
+            top: calc(90vw * .05);
+            left: 5%;
+            display: flex;
+            justify-content: center;
+            opacity: 0;
+            img {
+                width: 90%;
+            }
+
+        }
+        .brain {
+            position: absolute;
+            top: calc(90vw * .10);
+            left: 15%;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 70%;
+            }
+        }
+    }
+
     .askingquestions {
-        padding: 2rem 40vw 0 10vw;
+        position: relative;
+        margin-top: 1rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     @media screen and (min-width: $mediaSmall) {
         .askingquestions {
-            display: flex;
-            justify-content: center;
             padding: 0;
             padding-top: 3rem;
+        }
+    }
+
+    @media screen and (min-width: $mediaMedium) {
+        .section-container {
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            justify-content: space-between;
+            .animated-questions {
+                width: 40vw;
+                height: 50vw;
+                .heart {
+                    top: 15%
+                }
+                .brain {
+                    top: 25%
+                }
+            }
+            .static-text {
+                width: 40vw;
+                .actions {
+                    margin-top: 4rem;
+                }
+            }
         }
     }
 }

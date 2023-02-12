@@ -7,7 +7,7 @@
     let news = [];
 
     onMount(() => {
-        findLastNews()
+        findLastNews(3)
         .then(data => {
             news = data
         })
@@ -23,7 +23,7 @@
     
             <div class="whilewaiting hookup">
                 <p>
-                    En attendant notre rencontre, découvre sur <a href="https://church4you.be" class="emphasized red">church4you.be</a> un coin d'internet <span class="emphasized red">bienveillant et spi</span>
+                    En attendant notre <br />rencontre, découvre <br />sur <a href="https://church4you.be" class="emphasized red">church4you.be</a><br /> un coin d'internet<br /> <span class="emphasized red">bienveillant et spi</span>
                 </p>
             </div>
         </div>

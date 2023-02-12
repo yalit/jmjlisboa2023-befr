@@ -74,6 +74,8 @@ nav {
                     height: $logo-diameter;
                     border-radius: 50%;
                     background-color: #fff;
+                    z-index: 1000;
+
                     &:last-child {
                         $logo-small: calc($logo-diameter * .8);
                         width: $logo-small;
@@ -165,7 +167,7 @@ nav {
         }
     }
 
-    .menus {
+    .action-buttons {
         position: relative;
         opacity: 1;
         padding-top: calc(10vh - $buttons-diameter / 4);
@@ -173,6 +175,7 @@ nav {
         display: flex;
         gap: 5px;
         justify-content: flex-end;
+        z-index: 100;
 
         & > div {
             @extend .text-white;
@@ -184,6 +187,7 @@ nav {
             align-items: center;
             border-radius: 50%;
             padding: 5px;
+            cursor: pointer;
             &.orange {
                 @extend .background-orange;
             }
@@ -245,16 +249,15 @@ nav {
         }
     }
 
-    .secondary-title {
+    .main-menu {
         margin-top: $logo-diameter;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
+        transition: all 500ms ease-in-out;
         div {
             display: inline-block;
-            padding: 10px;
-            padding-right: 1.5rem;
-            background-color: #fff;
+            padding: 10px 1.5rem 10px 10px;
             border-radius: 5px;
             margin-top: -5px;
             font-size: var(--medium);

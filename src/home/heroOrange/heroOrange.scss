@@ -27,7 +27,11 @@
 
     .whilewaiting {
         margin-top: -10%;
-        padding: 0 20% 5% 10%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         color: white;
     }
 
@@ -40,11 +44,6 @@
             }
 
             .whilewaiting {
-                padding: 0 15% 0 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
             }
         }
     }

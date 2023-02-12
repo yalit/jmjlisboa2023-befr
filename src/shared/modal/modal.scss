@@ -1,0 +1,24 @@
+@import "../../tailwind.scss";
+
+.modal {
+  .modal-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background: rgba(#000, 0.05);
+    display: none;
+    svg {
+      z-index: 100;
+      cursor: pointer;
+    }
+  }
+  &:hover {
+    .modal-close {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}

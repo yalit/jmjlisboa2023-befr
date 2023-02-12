@@ -1,0 +1,62 @@
+@import '../../_base.scss';
+
+.menu {
+  @extend .background-green;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 0;
+  padding: 0;
+  z-index: 10;
+
+  display: grid;
+  grid-template-rows: 0fr;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  .menu-container {
+    min-height: 0;
+    transition: all 0.5s ease-in-out;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      display: inline-block;
+      padding: 0.75rem;
+      border-radius: 5px;
+      font-size: var(--medium);
+      &.full {
+        padding: 1rem;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      @media screen and (min-width: $mediaSmall) {
+        padding: 1rem;
+        &.full {
+          padding: 2rem;
+        }
+      }
+    }
+
+
+
+  }
+
+  &.opened {
+    height: 100vh;
+    padding: 2rem;
+    grid-template-rows: 1fr;
+    .menu-container {
+      visibility: visible;
+    }
+  }
+
+}
