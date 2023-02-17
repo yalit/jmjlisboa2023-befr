@@ -5,7 +5,7 @@
     import {faArrowDown, faArrowTurnDown} from "@fortawesome/free-solid-svg-icons";
 
     let vh = visualViewport.height;
-    let heartAnimationBounds = {start: vh / 2, end: vh / 8}
+    let heartAnimationBounds = {start: vh / 10 * 9, end: vh / 10}; //start must be higher than end as we go from bottom
     let y: number;
     let heart;
     let opacity = 0;
@@ -15,8 +15,8 @@
       if (heart !== undefined) {
         const heartPos: DOMRect = heart.getBoundingClientRect();
 
-        if (heartPos.top < heartAnimationBounds.start) {
-          opacity = (heartAnimationBounds.start-heartPos.top)/heartAnimationBounds.end;
+        if (heartPos.top < heartAnimationBounds.start){ 
+          opacity = (heartAnimationBounds.start-heartPos.top)/(heartAnimationBounds.start - heartAnimationBounds.end);
           if (heartPos.top < heartAnimationBounds.end) {
             opacity = 1;
           }
@@ -32,13 +32,13 @@
     <div class="section-container">
         <div class="animated-questions">
             <div class="white-back"></div>
-            <div class="heart" bind:this={heart}>
-                <img src="/img/heroRed/coeur.png" alt="heart behind brain|coeur derrière un cerveau">
-            </div>
             <div class="brain">
                 <img src="/img/heroRed/cerveau.png" alt="brain with cogs|cerveau avec engrenages">
             </div>
             <Questions />
+            <div class="heart" bind:this={heart}>
+                <img src="/img/heroRed/coeur.png" alt="heart behind brain|coeur derrière un cerveau">
+            </div>
         </div>
 
         <div class="static-text">

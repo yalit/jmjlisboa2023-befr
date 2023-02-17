@@ -22,7 +22,7 @@
         }
         .heart {
             position: absolute;
-            top: calc(90vw * .05);
+            top: 0;
             left: 5%;
             display: flex;
             justify-content: center;
@@ -34,7 +34,7 @@
         }
         .brain {
             position: absolute;
-            top: calc(90vw * .10);
+            top: 5%;
             left: 15%;
             display: flex;
             justify-content: center;
