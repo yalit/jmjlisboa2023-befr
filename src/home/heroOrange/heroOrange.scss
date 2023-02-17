@@ -35,15 +35,20 @@
         color: white;
     }
 
+    .actions {
+        .action {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+
     @media screen and (min-width: $mediaSmall) {
         .intro {
             display: flex;
 
             & > div {
                 width: 50%;
-            }
-
-            .whilewaiting {
             }
         }
     }

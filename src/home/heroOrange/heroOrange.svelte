@@ -2,6 +2,8 @@
     import './heroOrange.scss';
     import { onMount } from 'svelte';
     import { findLastNews } from '../../lib/newsRepository';
+    import {FontAwesomeIcon} from "@fortawesome/svelte-fontawesome";
+    import {faArrowTurnDown} from "@fortawesome/free-solid-svg-icons";
 
     // is a News
     let news = [];
@@ -44,7 +46,7 @@
                 <a href="#">En savoir plus sur les JMJ</a>
             </div>
             <div class="action">
-                <a href="#">Tu ne pars pas aux JMJ ?</a>
+                <span>Tu ne pars pas aux JMJ ?</span><FontAwesomeIcon icon={faArrowTurnDown} />
             </div>
             <div class="action">
                 <a href="#">Découvre pleins d'activités, groupes et outils sur C4Y.be</a>
