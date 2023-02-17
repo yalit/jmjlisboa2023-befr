@@ -20,7 +20,7 @@
     <div class="section-container">
         <div class="intro">
             <div class="top-image">
-                <img src="/img/heroYellow/angryWindow.svg" alt="Internet tab and angry icons and emoticons">
+                <img src="/img/heroYellow/happyWindow.svg" alt="Internet tab and angry icons and emoticons">
             </div>
     
             <div class="whilewaiting hookup">
