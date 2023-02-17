@@ -55,7 +55,7 @@
                     <a href="#">Découvre les JMJ</a>
                 </div>
                 <div class="action">
-                    <span>Je suis déjà inscrit⸱e</span> <FontAwesomeIcon icon={faArrowTurnDown} />
+                    <span>Déjà inscrit⸱e ?</span> <FontAwesomeIcon icon={faArrowTurnDown} />
                 </div>
                 <div class="action" on:click={showPopeMessage}>
                     <a href="#">Regarde le message du Page aux jeunes inscrits</a>
