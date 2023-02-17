@@ -1,7 +1,7 @@
 <script lang="ts">
     import './herogreen.scss'
     import {FontAwesomeIcon} from "@fortawesome/svelte-fontawesome";
-    import {faArrowDown} from "@fortawesome/free-solid-svg-icons";
+    import {faArrowDown, faArrowTurnDown, faCaretRight} from "@fortawesome/free-solid-svg-icons";
     import Modal from "../../shared/modal/Modal.svelte";
 
     let perso; //dom node of img
@@ -46,7 +46,7 @@
     <div class="section-container">
         <div class="text-part">
             <div class="youtoo hookup">
-                <div class="div">Si toi aussi comme le dit<br /> <span class="emphasized red">le pape François</span><br /> tu as soif d'horizon</div>
+                <div class="div">Si toi aussi comme <br /> <span class="emphasized red">le pape François</span><br /> tu as soif d'horizon</div>
                 <div class="div">Alors quitte tes 4 murs !</div>
             </div>
             
@@ -55,7 +55,7 @@
                     <a href="#">Découvre les JMJ</a>
                 </div>
                 <div class="action">
-                    <a href="#">Je suis déjà inscrit⸱e</a>
+                    <span>Déjà inscrit⸱e ?</span> <FontAwesomeIcon icon={faArrowTurnDown} />
                 </div>
                 <div class="action" on:click={showPopeMessage}>
                     <a href="#">Regarde le message du Page aux jeunes inscrits</a>

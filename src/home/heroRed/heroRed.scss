@@ -22,7 +22,7 @@
         }
         .heart {
             position: absolute;
-            top: calc(90vw * .05);
+            top: 0;
             left: 5%;
             display: flex;
             justify-content: center;
@@ -34,7 +34,7 @@
         }
         .brain {
             position: absolute;
-            top: calc(90vw * .10);
+            top: 5%;
             left: 15%;
             display: flex;
             justify-content: center;
@@ -47,11 +47,22 @@
     .askingquestions {
         position: relative;
         margin-top: 1rem;
-        padding: 2rem;
+        padding: 2rem calc((100vw - 75vw) / 2);
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
+    }
+
+    .actions {
+        align-items: flex-start;
+        .jemelance {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 5px;
+            text-align: left;
+        }
     }
 
     @media screen and (min-width: $mediaSmall) {
@@ -79,8 +90,13 @@
             }
             .static-text {
                 width: 40vw;
+                .askingquestions {
+                    margin-left: 5rem;
+                }
                 .actions {
                     margin-top: 4rem;
+                    padding-left: 5rem;
+                    align-items: flex-start;
                 }
             }
         }

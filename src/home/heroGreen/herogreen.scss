@@ -12,23 +12,21 @@ $margin: 3rem;
     .text-part {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         width: 100%;
         .youtoo {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             position: relative;
-            padding: $margin;
-            padding-bottom: 0;
+            padding: $margin $margin 0;
         }
 
         .knowmore {
             padding: 0 calc($margin / 2);
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 1rem;
 
             svg {
@@ -42,6 +40,10 @@ $margin: 3rem;
             p {
                 font-size: var(--normal);
             }
+        }
+
+        .actions {
+            align-items: flex-start;
         }
     }
 
@@ -76,6 +78,17 @@ $margin: 3rem;
                 margin-top: -250px;
                 height: 250px;
             }
+        }
+    }
+
+    .actions {
+        .action {
+            text-align: left;
+            display: flex;
+            align-items: flex-start;
+        }
+        svg {
+            margin: 0.3rem 0 0 1rem;
         }
     }
 
