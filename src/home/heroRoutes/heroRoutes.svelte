@@ -11,22 +11,22 @@
             link: 'https://church4you.be'
         },
         {
-            url: '/img/heroRoutes/routeX.svg',
+            url: '/img/heroRoutes/fete.jpg',
             alt: "Logo de la route X",
             link: 'https://church4you.be'
         },
         {
-            url: '/img/heroRoutes/routeX.svg',
+            url: '/img/heroRoutes/velo.jpg',
             alt: "Logo de la route X",
             link: 'https://church4you.be'
         },
         {
-            url: '/img/heroRoutes/routeX.svg',
+            url: '/img/heroRoutes/stj.jpg',
             alt: "Logo de la route X",
             link: 'https://church4you.be'
         },
         {
-            url: '/img/heroRoutes/routeX.svg',
+            url: '/img/heroRoutes/mej.jpg',
             alt: "Logo de la route X",
             link: 'https://church4you.be'
         }
