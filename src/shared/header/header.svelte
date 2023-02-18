@@ -5,7 +5,15 @@
     import {faInstagram, faYoutube, faFacebook} from '@fortawesome/free-brands-svg-icons'
     import Menu from "./menu.svelte";
 
-    export let backColor= "#fff";
+    export let backColor;
+    let socialBack = "#d43425";
+    let socialColor = "#fff";
+    $: {
+        if (backColor !== '#fff') {
+            socialBack = "#fff";
+            socialColor = backColor;
+        } 
+    }
 
     let menuOpened = false
     const menuToggle = () => menuOpened = !menuOpened
@@ -27,6 +35,7 @@
 
 <nav style="--back-color: {backColor}">
     <div class="section-container">
+        <slot name="back"></slot>
         <div class="halo"></div>
         <div class="top-white-banner">
             <div class="banner-container">
@@ -48,6 +57,9 @@
         <div class="bottom-left-banner"></div>
 
         <div class="action-buttons">
+            <div class="action-button orange">
+                <img src="/img/navbar/ticket.svg" alt="Ticket pour les JMJ">
+            </div>
             <div class="action-button green" on:click={menuToggle}>
                 {#if menuOpened}
                     <FontAwesomeIcon icon={faTimes} />
@@ -55,16 +67,13 @@
                     <FontAwesomeIcon icon={faBars} />
                 {/if}
             </div>
-            <div class="action-button orange">
-                <img src="/img/navbar/ticket.svg" alt="Ticket pour les JMJ">
-            </div>
         </div> 
 
         <slot name="main"></slot>
 
         <slot name="secondary"></slot>
 
-        <div class="socials">
+        <div class="socials" style="--social-back: {socialBack}; --social-color: {socialColor}">
             <div class="social">
                 <a href="https://www.instagram.com/church4you.be/?hl=fr" target="_blank" rel="noreferrer">
                     <FontAwesomeIcon icon={faInstagram} />

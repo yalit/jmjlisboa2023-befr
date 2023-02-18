@@ -1,14 +1,23 @@
 @import '../../_base.scss';
 
 nav {
+    --back-image: '';
     $logo-diameter: 30vw;
 
     position: relative;
     width: 100%;
-    background-image: url('/img/navbar/back_crowd.png');
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
+
+    .back {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: var(--back-image);
+    }
 
     .halo {
         position: absolute;

@@ -3,9 +3,12 @@
     import {FontAwesomeIcon} from '@fortawesome/svelte-fontawesome';
     import {faAngleDoubleRight} from '@fortawesome/free-solid-svg-icons'
     import Header from '../../shared/header/header.svelte';
+
+    let backImage = '/img/navbar/back_crowd.png';
 </script>
 
-<Header>
+<Header backColor="#fff">
+    <div class="back" slot="back" style="--back-image: url({backImage})"></div>
     <div class="main-title" slot="main">
         <p>en route</p>
         <p>pour les JMJ</p>

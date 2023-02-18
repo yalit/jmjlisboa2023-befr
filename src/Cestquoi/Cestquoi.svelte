@@ -3,4 +3,6 @@
     import Header from '../shared/header/header.svelte';
 </script>
 
-<Header />
+<Header backColor="#00893e">
+</Header>
+
