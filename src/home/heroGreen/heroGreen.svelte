@@ -20,7 +20,7 @@
         }
 
         if (persoSizes.top < persoAnimationBounds.start) {
-          movePerso = (persoAnimationBounds.start-persoSizes.top)/(persoAnimationBounds.start - persoAnimationBounds.end) * persoSizes.width;
+          movePerso = (persoAnimationBounds.start-persoSizes.top)/(persoAnimationBounds.start - persoAnimationBounds.end) * (persoSizes.width / 3);
           if (persoSizes.top < persoAnimationBounds.end) {
             movePerso = persoSizes.width
           }
@@ -79,7 +79,7 @@
             </div>
             <div class="perso">
                 <a href="#">
-                    <img bind:this={perso} src="/img/heroGreen/perso.png" alt="Un personnage qui marche vers la droite de l'écran" />
+                    <img bind:this={perso} src="/img/heroGreen/perso.svg" alt="Un personnage qui marche vers la droite de l'écran" />
                 </a> <!-- put a link to the inscription form -->
             </div>
         </div>
