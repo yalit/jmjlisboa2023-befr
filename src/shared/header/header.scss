@@ -207,7 +207,7 @@ nav {
 
     .socials {
         position: absolute;
-        z-index: 1000;
+        z-index: 50;
         bottom: 1vh;
         right: calc($buttons-diameter / 2);
         display: flex;
