@@ -39,6 +39,7 @@ nav {
 
     .top-white-banner {
         position: absolute;
+        z-index: 50;
         top: -90vh;
         right: 0;
         width: 120vw;
@@ -171,8 +172,8 @@ nav {
         & > div {
             @extend .text-white;
             position: relative;
-            width: $buttons-diameter;
-            height: $buttons-diameter;
+            width: calc($buttons-diameter * 1.5);
+            height: calc($buttons-diameter * 1.5);
             display: flex;
             justify-content: center;
             align-items: center;
