@@ -5,7 +5,7 @@
     import {faArrowDown, faArrowTurnDown} from "@fortawesome/free-solid-svg-icons";
 
     let vh = visualViewport.height;
-    let heartAnimationBounds = {start: vh / 10 * 9, end: vh / 10}; //start must be higher than end as we go from bottom
+    let heartAnimationBounds = {start: vh / 2, end: vh / 10}; //start must be higher than end as we go from bottom
     let y: number;
     let heart;
     let opacity = 0;
