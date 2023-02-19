@@ -12,7 +12,7 @@
 <div class="menu {menuStatus}">
     <div class="menu-container">
         <div class="text-green background-white">
-            <a href="#">
+            <a href="cestquoi.html">
                 <span class="arrow-left"><FontAwesomeIcon icon={faAngleDoubleRight} /></span>
                 <span>Les JMJ c'est quoi ?</span>
             </a>

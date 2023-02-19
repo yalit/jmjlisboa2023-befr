@@ -81,3 +81,52 @@ section {
   padding: 0;
   overflow: hidden;
 }
+
+.actions {
+  font-size: var(--normal);
+  padding: 3rem calc((100vw - 75vw) / 2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  .action {
+      @extend .text-red, .background-white;
+      display: inline-flex;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      &:nth-child(2n) {
+          @extend .text-white;
+          background: none;
+      }
+  }
+}
+
+@media screen and (min-width: $mediaSmall) {
+  .actions {
+      .action {
+          padding: 1.5rem 10px;
+      }
+  }
+}
+
+.hookup {
+  font-family: donJose;
+  font-size: var(--medium);
+  line-height: 1.25; 
+}
+
+.emphasized {
+  border-radius: 5px;
+  padding: 0 5px;   
+  &.red {
+      @extend .background-red, .text-white;
+  }        
+  &.orange {
+      @extend .background-orange, .text-white;
+  }
+  &.green {
+      @extend .background-green, .text-white;
+  }
+}
