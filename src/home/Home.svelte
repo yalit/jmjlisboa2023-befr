@@ -4,7 +4,7 @@
   import HeroRoutes from "./heroRoutes/heroRoutes.svelte";
   import HeroRed from "./heroRed/heroRed.svelte";
   import HeroOrange from "./heroOrange/heroOrange.svelte";
-  import Footer from "./footer/footer.svelte";
+  import Footer from "../shared/footer/footer.svelte";
 </script>
 
 <Nav />
