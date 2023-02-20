@@ -1,5 +1,5 @@
 <script lang="ts">
-    import "./cestquoi.scss";
+    import "./index.scss";
 
     import Page from "../../shared/page/page.svelte";
     import Madrid from "./madrid.svelte";
@@ -24,14 +24,14 @@
                     <div class="emphasized red">à Lisbonne</div>
                 </div>
             </div>
-    
+
             <div class="articles">
                 <article></article>
                 <article></article>
                 <article></article>
                 <article></article>
             </div>
-    
+
             <div class="actions">
                 <div class="action none"></div>
                 <div class="action">
