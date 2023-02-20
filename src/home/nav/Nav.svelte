@@ -23,13 +23,13 @@
             </a>
         </div>
         <div class="text-red background-white">
-            <a href="#">
+            <a href="proposal.html">
                 <span class="arrow-left"><FontAwesomeIcon icon={faAngleDoubleRight} /></span>
                 <span>Différentes propositions</span>
             </a>
         </div>
         <div class="text-orange background-white">
-            <a href="#">
+            <a href="c4y.html">
                 <span class="arrow-left"><FontAwesomeIcon icon={faAngleDoubleRight} /></span>
                 <span>Infos Church4You</span>
             </a>
