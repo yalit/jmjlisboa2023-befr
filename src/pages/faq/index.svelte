@@ -2,16 +2,13 @@
     import "./index.scss";
 
     import Page from "../../shared/page/page.svelte";
-    import Madrid from "./madrid.svelte";
     import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
 </script>
 
 <Page backColor="#00893e">
     <div class="back" slot="header_back"></div>
-    <div class="main" slot="header_main">
-        <Madrid />
-    </div>
+    <div class="main" slot="header_main"></div>
 
     <section class="page-content" slot="content">
         <div class="section-container">
