@@ -3,6 +3,7 @@
 
     import Page from "../../shared/page/page.svelte";
     import Madrid from "./madrid.svelte";
+    import links, {CHURCH4YOU} from "../../lib/data/links";
     import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
 </script>
@@ -38,7 +39,7 @@
                     <span>Tu ne pars pas aux JMJ ? </span> <FontAwesomeIcon icon={faArrowTurnDown} />
                 </div>
                 <div class="action">
-                    <a href="#">Découvre d'autres activités, groupes et outils sur Church4You.be</a>
+                    <a href={links[CHURCH4YOU]} target="_blank">Découvre d'autres activités, groupes et outils sur Church4You.be</a>
                 </div>
             </div>
         </div>
