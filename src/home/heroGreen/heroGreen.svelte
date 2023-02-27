@@ -69,8 +69,10 @@
         </div>
     
         <div class="nerestepasici">
-            <div class="white-back"></div>
             <div class="border-white-bottom"></div>
+            <div class="fond">
+                <img src="/img/heroGreen/map_fond.svg" alt="">
+            </div>
             <div class="pasici">
                 <img src="/img/heroGreen/pasici.svg" alt="Ne reste pas ici, bouge !">
             </div>

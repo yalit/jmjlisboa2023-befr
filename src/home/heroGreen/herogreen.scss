@@ -8,6 +8,16 @@ $margin: 3rem;
     background-color: rgb(30, 94, 30);
     width: 100%;
     overflow: hidden;
+    padding: 0;
+
+    .section-container{
+        padding-top: var(--section-padding);
+        padding-left: var(--section-padding);
+        @media screen and (min-width: $mediaMedium) {
+            padding-top: 0;
+            padding-left: calc(var(--section-padding) / 3);
+        }
+    }
 
     .text-part {
         display: flex;
@@ -19,11 +29,9 @@ $margin: 3rem;
             flex-direction: column;
             align-items: flex-start;
             position: relative;
-            padding: $margin $margin 0;
         }
 
         .knowmore {
-            padding: 0 calc($margin / 2);
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -43,6 +51,7 @@ $margin: 3rem;
         }
 
         .actions {
+            padding-left: 0;
             align-items: flex-start;
         }
     }
@@ -66,8 +75,15 @@ $margin: 3rem;
 
         --height: 100vw;
 
-        .pasici {
+        .fond {
             position: relative;
+            height: var(--height);
+            aspect-ratio: 1;
+        }
+        .pasici {
+            position: absolute;
+            top: $margin;
+            left: 0;
             height: var(--height);
             aspect-ratio: 1;
         }
@@ -103,14 +119,12 @@ $margin: 3rem;
 
     @media screen and (min-width: $mediaMedium) {
         .section-container {
-            display: flex;
-            flex-direction: row-reverse;
-
-            & > div {
-                width: 50%;
-            }
+            display: grid;
+            grid-template-columns: repeat(2, 47.5%);
+            column-gap: 5%;
 
             .text-part {
+                order: 1;
                 justify-content: center;
                 gap: 1rem;
                 .youtoo {
@@ -127,6 +141,7 @@ $margin: 3rem;
             }
 
             .nerestepasici {
+                order: -1;
                 --height: 50vw;
             }
         }
