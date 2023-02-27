@@ -4,6 +4,7 @@
     @extend .background-red, .text-white;
 
     border-bottom: 5rem solid white;
+    padding: 0;
 
     .animated-questions {
         position: relative;
@@ -20,34 +21,31 @@
             border-radius: 50%;
             transform: rotate(-30deg);
         }
-        .heart {
+        .brain, .heart {
             position: absolute;
-            top: 0;
-            left: 5%;
+            top: 15%;
+            left: 10%;
             display: flex;
             justify-content: center;
+            img {
+                width: 80%;
+            }
+        }
+
+        .heart {
             opacity: 0;
+            top: 5%;
+            left: 5%;
             img {
                 width: 90%;
-            }
-
-        }
-        .brain {
-            position: absolute;
-            top: 5%;
-            left: 15%;
-            display: flex;
-            justify-content: center;
-            img {
-                width: 70%;
             }
         }
     }
 
     .askingquestions {
         position: relative;
-        margin-top: 1rem;
-        padding: 2rem calc((100vw - 75vw) / 2);
+        margin-top: var(--section-padding);
+        padding: var(--section-padding);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -56,7 +54,9 @@
 
     .actions {
         align-items: flex-start;
+        padding-left: var(--section-padding);
         .jemelance {
+            padding-left: 0;
             display: flex;
             justify-content: flex-start;
             align-items: center;
