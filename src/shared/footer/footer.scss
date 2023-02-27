@@ -1,0 +1,32 @@
+@import '../../_base.scss';
+
+section {
+  width: 100%;
+  background: #fff;
+  padding: 2rem 5%;
+
+  .logos_c4y {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      width: calc(100%/8);
+    }
+  }
+
+  .footer_text {
+    @extend .text-orange;
+    font-family: 'donJose', sans-serif;
+    font-size: var(--large);
+    margin: 3rem 0;
+    text-align: center;
+  }
+
+  .logos_partenaires {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+}
