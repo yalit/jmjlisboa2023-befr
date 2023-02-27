@@ -8,7 +8,6 @@ nav {
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
     height: 100vh;
 
     * {
@@ -16,8 +15,8 @@ nav {
     }
 
     .section-container {
-        height: 100vh;   
-        border-bottom: 1vh solid var(--back-color);
+        box-sizing: content-box;
+        height: 100vh;
     }
 
     &::before {
@@ -208,7 +207,7 @@ nav {
     .socials {
         position: absolute;
         z-index: 50;
-        bottom: 1vh;
+        bottom: 3vh;
         right: calc($buttons-diameter / 2);
         display: flex;
         gap: 5px;
@@ -242,5 +241,14 @@ nav {
                 --ratio: 1;
             }
         }
+    }
+
+    .blank {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 10vh;
+        background: #fff;
     }
 }
