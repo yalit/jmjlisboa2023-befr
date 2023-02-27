@@ -24,10 +24,12 @@
     align-items: center;
 
     div {
+      position: relative;
       display: inline-block;
       padding: 0.75rem;
       border-radius: 5px;
       font-size: var(--medium);
+      z-index: 10000;
       &.full {
         padding: 1rem;
       }
