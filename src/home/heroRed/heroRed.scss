@@ -9,22 +9,10 @@
     .animated-questions {
         position: relative;
         width: 100vw;
-        height: 90vw;
-        .white-back {
-            @extend .background-white;
-            position: absolute;
-            top: 0;
-            left: -35%;
-            width: 150%;
-            height: 100%;
-            aspect-ratio: 1;
-            border-radius: 50%;
-            transform: rotate(-30deg);
-        }
         .brain, .heart {
             position: absolute;
-            top: 15%;
-            left: 10%;
+            top: 25%;
+            left: 5%;
             display: flex;
             justify-content: center;
             img {
@@ -34,8 +22,9 @@
 
         .heart {
             opacity: 0;
-            top: 5%;
-            left: 5%;
+            top: 15%;
+            left: 0;
+            z-index: 10;
             img {
                 width: 90%;
             }
@@ -65,13 +54,6 @@
         }
     }
 
-    @media screen and (min-width: $mediaSmall) {
-        .askingquestions {
-            padding: 0;
-            padding-top: 3rem;
-        }
-    }
-
     @media screen and (min-width: $mediaMedium) {
         .section-container {
             display: flex;
@@ -79,23 +61,22 @@
             align-items: center;
             justify-content: space-between;
             .animated-questions {
-                width: 40vw;
-                height: 50vw;
-                .heart {
-                    top: 15%
-                }
-                .brain {
-                    top: 25%
+                width: 50vw;
+                padding-right: 2rem;
+                padding-bottom: 5vh;
+                .questions {
+                    width: 55%;
+                    left: 22.5%
                 }
             }
             .static-text {
-                width: 40vw;
+                width: 45vw;
                 .askingquestions {
-                    margin-left: 5rem;
+                    margin-top: 0;
                 }
                 .actions {
-                    margin-top: 4rem;
-                    padding-left: 5rem;
+                    padding-top: 0;
+                    padding-right: 0;
                     align-items: flex-start;
                 }
             }

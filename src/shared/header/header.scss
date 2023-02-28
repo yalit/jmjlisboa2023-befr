@@ -162,7 +162,7 @@ nav {
         position: relative;
         opacity: 1;
         padding-top: calc(10vh - $buttons-diameter / 4);
-        padding-right: calc($buttons-diameter);
+        padding-right: var(--section-padding);
         display: flex;
         gap: 5px;
         justify-content: flex-end;
@@ -190,7 +190,6 @@ nav {
         @media screen and (min-width: $mediaSmall) {
             $buttons-diameter: 60px;
             padding-top: 7.5vw;
-            padding-right: 7.5vw;
             gap: 10px;
 
             & > div {
@@ -208,7 +207,7 @@ nav {
         position: absolute;
         z-index: 50;
         bottom: 3vh;
-        right: calc($buttons-diameter / 2);
+        right: var(--section-padding);
         display: flex;
         gap: 5px;
         justify-content: flex-end;
@@ -235,7 +234,6 @@ nav {
 
         @media screen and (min-width: $mediaSmall) {
             bottom: 5vh;
-            right: calc($buttons-diameter * 2);
 
             .social {
                 --ratio: 1;

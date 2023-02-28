@@ -26,6 +26,15 @@
         }
     }
 
+    @media screen and (min-width: $mediaSmall) {
+        .top-image {
+            transform: translate(-15%, -25%);
+            img {
+                transform: translate(12%, 10%);
+            }
+        }
+    }
+
     .whilewaiting {
         margin-top: -35%;
         padding: var(--section-padding);

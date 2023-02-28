@@ -57,20 +57,22 @@ nav {
         }
 
         @media screen and (min-width: $mediaMedium) {
-            margin-top: -2rem;
+            margin-top: 0;
             font-size: 3.5rem;
             padding-left: calc($logo-diameter / 2);
         }
 
         @media screen and (min-width: $mediaLarge) {
-            margin-top: 0;
+            margin-top: 2rem;
             font-size: 5rem;
             padding-left: calc($logo-diameter / 2);
         }
     }
 
     .main-menu {
-        margin-top: $logo-diameter;
+        position: absolute;
+        right: var(--section-padding);
+        bottom: 25vh;
         display: flex;
         z-index: 50;
         flex-direction: column;
@@ -91,19 +93,6 @@ nav {
                 justify-content: center;
                 gap: 10px;
             }
-        }
-
-        @media screen and (min-width: $mediaSmall) {
-            margin-top: calc($logo-diameter / 1.25);
-            margin-right: 5vw;
-        }
-
-        @media screen and (min-width: $mediaMedium) {
-            margin-top: calc($logo-diameter / 1.5);
-        }
-
-        @media screen and (min-width: $mediaLarge) {
-            margin-top: calc($logo-diameter / 2);
         }
     }
 }
