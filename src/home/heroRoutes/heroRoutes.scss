@@ -2,6 +2,8 @@
 
 #heroRoutes {
     background-color: white;
+    padding-left: 0;
+    padding-right: 0;
     
     .allroads {
         @extend .text-red;
@@ -9,6 +11,7 @@
         font-size: var(--large);
         text-align: center;
         padding: 3rem;
+        line-height: calc(var(--large)*1.1);
     }
 
     @media screen and (min-width: $mediaSmall) {
@@ -41,10 +44,10 @@
             z-index: 1;
             cursor: pointer;
             &.right {
-                right: $size;
+                right: var(--section-padding);
             }
             &.left {
-                left: $size;
+                left: var(--section-padding);
             }
             
         }

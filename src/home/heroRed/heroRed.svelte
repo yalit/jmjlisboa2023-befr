@@ -31,7 +31,9 @@
 <section id="heroRed">
     <div class="section-container">
         <div class="animated-questions">
-            <div class="white-back"></div>
+            <div class="fond">
+                <img src="/img/heroRed/map_fond.svg" alt="">
+            </div>
             <div class="brain">
                 <img src="/img/heroRed/cerveau.png" alt="brain with cogs|cerveau avec engrenages">
             </div>
