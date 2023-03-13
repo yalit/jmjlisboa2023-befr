@@ -1,7 +1,7 @@
 <script lang="ts">
     import "./index.scss";
 
-    import Page from "../../shared/page/page.svelte";
+    import Page from "../page/page.svelte";
     import Madrid from "./madrid.svelte";
     import links, {CHURCH4YOU} from "../../lib/data/links";
     import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";

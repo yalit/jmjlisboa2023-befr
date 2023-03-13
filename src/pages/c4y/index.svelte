@@ -1,7 +1,7 @@
 <script lang="ts">
     import "./index.scss";
 
-    import Page from "../../shared/page/page.svelte";
+    import Page from "../page/page.svelte";
     import C4Y from './c4y.svelte';
     import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";

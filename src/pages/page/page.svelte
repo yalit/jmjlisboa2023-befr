@@ -1,7 +1,7 @@
 <script lang="ts">
     import './page.scss';
-    import Header from '../header/header.svelte';    
-    import Footer from "../footer/footer.svelte";
+    import Header from '../header/header.svelte';
+    import Footer from "../../shared/footer/footer.svelte";
 
     export let backColor;
 </script>

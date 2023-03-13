@@ -73,23 +73,7 @@
 
         <slot name="secondary"></slot>
 
-        <div class="socials" style="--social-back: {socialBack}; --social-color: {socialColor}">
-            <div class="social">
-                <a href="https://www.instagram.com/church4you.be/?hl=fr" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} />
-                </a>
-            </div>
-            <div class="social">
-                <a href="https://www.youtube.com/JMJbelgique" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faYoutube} />
-                </a>
-            </div>
-            <div class="social">
-                <a href="https://www.facebook.com/Church4you.be/" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faFacebook} />
-                </a>
-            </div>
-        </div>
+
         <div class="blank"></div>
     </div>
 </nav>
