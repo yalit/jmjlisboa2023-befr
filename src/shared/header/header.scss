@@ -1,8 +1,7 @@
 @import '../../_base.scss';
+@import '../../shared/header/header_shared.scss';
 
 nav {
-    $logo-diameter: 30vw;
-    $buttons-diameter: 30px;
 
     position: relative;
     width: 100%;
@@ -54,23 +53,12 @@ nav {
                 position: absolute;
                 bottom: calc(-1 * $logo-diameter * .3);
                 right: calc(100vw - ($logo-diameter * 1.75));
-                display: flex;
-                gap: 0;
-                align-items: flex-start;
 
                 & > div {
-                    padding: 10px;
                     margin: 0;
-                    width: $logo-diameter;
-                    height: $logo-diameter;
-                    border-radius: 50%;
-                    background-color: #fff;
                     z-index: 1000;
 
                     &:last-child {
-                        $logo-small: calc($logo-diameter * .8);
-                        width: $logo-small;
-                        height: $logo-small;
                         margin-top: 0;
                         margin-left: calc(-1 * $logo-diameter * .2);
                     }
@@ -160,46 +148,12 @@ nav {
 
     .action-buttons {
         position: relative;
-        opacity: 1;
         padding-top: calc(10vh - $buttons-diameter / 4);
         padding-right: var(--section-padding);
-        display: flex;
-        gap: 5px;
-        justify-content: flex-end;
         z-index: 100;
 
-        & > div {
-            @extend .text-white;
-            position: relative;
-            width: calc($buttons-diameter * 1.5);
-            height: calc($buttons-diameter * 1.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-            padding: 5px;
-            cursor: pointer;
-            &.orange {
-                @extend .background-orange;
-            }
-            &.green {
-                @extend .background-green;
-            }
-        }
-
         @media screen and (min-width: $mediaSmall) {
-            $buttons-diameter: 60px;
             padding-top: 7.5vw;
-            gap: 10px;
-
-            & > div {
-                width: $buttons-diameter;
-                height: $buttons-diameter;
-                svg {
-                    width: calc($buttons-diameter * .5);
-                    height: calc($buttons-diameter * .5);
-                }
-            }
         }
     }
 
@@ -208,36 +162,13 @@ nav {
         z-index: 50;
         bottom: 3vh;
         right: var(--section-padding);
-        display: flex;
-        gap: 5px;
-        justify-content: flex-end;
         .social {
-            --ratio: 0.6;
-            width: calc($buttons-diameter * var(--ratio));
-            height: calc($buttons-diameter * var(--ratio));
-            border-radius: 50%;
             background-color: var(--social-back);
             color: var(--social-color);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            a {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                svg {
-                    width: 65%;
-                    height: 65%;
-                }
-            }
         }
 
         @media screen and (min-width: $mediaSmall) {
             bottom: 5vh;
-
-            .social {
-                --ratio: 1;
-            }
         }
     }
 

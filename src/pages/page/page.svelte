@@ -3,7 +3,7 @@
     import Header from '../header/header.svelte';
     import Footer from "../../shared/footer/footer.svelte";
 
-    export let backColor;
+    export let backColor: string;
 </script>
 
 <Header backColor={backColor}>
