@@ -2,9 +2,9 @@
     import './header.scss';
     import {FontAwesomeIcon} from "@fortawesome/svelte-fontawesome";
     import {faBars, faTimes} from "@fortawesome/free-solid-svg-icons";
-    import {faFacebook, faInstagram, faYoutube} from "@fortawesome/free-brands-svg-icons";
     import Menu from '../../shared/header/menu.svelte';
     import links, { REGISTER } from '../../lib/data/links';
+    import Socials from '../../shared/socials/socials.svelte';
 
     export let backColor: string;
     let menuOpened = false;
@@ -44,26 +44,15 @@
     <div class="main">
         <div class='image'>
             <div class="arrow"><img src="/img/pages/fleche_fond.svg" alt=""></div>
-            <div class="header_image"><img src="" /></div>
+            <slot name="header_image" />
         </div>
-        
-        <div class="socials" style="--social-back: #fff; --social-color: {backColor}">
-            <div class="social">
-                <a href="https://www.instagram.com/church4you.be/?hl=fr" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} />
-                </a>
-            </div>
-            <div class="social">
-                <a href="https://www.youtube.com/JMJbelgique" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faYoutube} />
-                </a>
-            </div>
-            <div class="social">
-                <a href="https://www.facebook.com/Church4you.be/" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faFacebook} />
-                </a>
-            </div>
-        </div>
+       
+        <Socials backColor="#fff" color={backColor} />
     </div>
 
+    <div class="text_part">
+        <div class="hookup">
+            <slot name="text" />
+        </div>
+    </div>
 </nav>

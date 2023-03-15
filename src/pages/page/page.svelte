@@ -7,14 +7,10 @@
 </script>
 
 <Header backColor={backColor}>
-    <div class="back" slot="back">
-        <slot name="header_back"></slot>
-    </div>
-    <div class="main" slot="main">
-        <slot name="header_main"></slot>
-    </div>
+    <slot name="image" slot="header_image" />
+    <slot name="header_text" slot="text" />
 </Header>
 
-<slot name="content"></slot>
+<slot name="content" />
 
 <Footer />

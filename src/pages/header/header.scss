@@ -3,8 +3,8 @@
 
 nav {
     position: relative;
-    overflow: hidden;
     background-color: var(--back-color);
+    width: 100%;
 }
 
 .logos {
@@ -35,9 +35,68 @@ nav {
 }
 
 .main {
+    position: relative;
+    width: 100%;
     .image {
-        margin-top: 7vh;
-        overflow: hidden;
-        height: 80vh;
+        position: relative;
+        margin-top: 5vh;
+        width: 130%;
+        margin-left: -15%;
+
+        svg {
+            position: absolute;
+            bottom: -0%;
+            right: 0;
+            width: 65%;
+        }
+    }
+
+    .socials {
+        margin-top: 2rem;
+        margin-right: 1rem;
+    }
+}
+
+.text_part {
+    color: white;
+    .hookup {
+        position: relative;
+        margin-left: 2rem;
+        & > div {
+            position: inherit;
+            display: block;
+            width: fit-content;
+        }
+    }
+}
+
+@media screen and (min-width: $mediaSmall) {
+    .main {
+        width: 55%;
+        margin: 0;
+        margin-left: 45%;
+    }
+
+    .text_part {
+        position: absolute;
+        top: 35vw;
+        left: 2rem;
+
+    }
+}
+
+@media screen and (min-width: $mediaLarge) {
+    .text_part {
+        .hookup {
+            font-size: var(--large);
+        }
+    }
+}
+
+@media screen and (min-width: $mediaXLarge) {
+    .text_part {
+        .hookup {
+            font-size: var(--xl);
+        }
     }
 }

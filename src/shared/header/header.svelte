@@ -3,6 +3,7 @@
     import {FontAwesomeIcon} from '@fortawesome/svelte-fontawesome';
     import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
     import Menu from "./menu.svelte";
+    import Socials from '../socials/socials.svelte';
 
     export let backColor: string;
 
@@ -64,7 +65,7 @@
 
         <slot name="secondary"></slot>
 
-
+        <Socials />
         <div class="blank"></div>
     </div>
 </nav>

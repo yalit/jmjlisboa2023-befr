@@ -1,0 +1,29 @@
+@import '../../_base.scss';
+
+$buttons-diameter: 30px;
+
+.socials {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    .social {
+        width: $buttons-diameter; 
+        height: $buttons-diameter; 
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: var(--social-back);
+        color: var(--social-color);
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg {
+                width: 70%;
+                height: 70%;
+            }
+        }
+    }
+}

@@ -9,21 +9,6 @@
     background: #fff;
 }
 
-.main {
-    svg {
-        margin-top: -5vh;
-        height: 95vh;
-    }
-
-    @media screen and (min-width: $mediaSmall) {
-        display: flex;
-        justify-content: center;
-        svg {
-            height: 100vh;
-        }
-    }
-}
-
 .page-content {
     background-color: $green;
 

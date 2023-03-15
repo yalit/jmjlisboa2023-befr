@@ -22,6 +22,21 @@ $buttons-diameter: 30px;
     }
 }
 
+@media screen and (min-width: $mediaSmall) {
+    $logo-diameter: 20vw;
+    .logos {
+        & > div {
+            width: $logo-diameter;
+            height: $logo-diameter;
+            &:last-child {
+                $logo-small: calc($logo-diameter * .8);
+                width: $logo-small;
+                height: $logo-small;
+            }
+        }
+    }
+}
+
 .action-buttons {
     opacity: 1;
     display: flex;
@@ -61,35 +76,6 @@ $buttons-diameter: 30px;
             }
         }
     }
-
 }
 
-.socials {
-    display: flex;
-    gap: 5px;
-    justify-content: flex-end;
-    .social {
-        --ratio: 0.6;
-        width: calc($buttons-diameter * var(--ratio));
-        height: calc($buttons-diameter * var(--ratio));
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            svg {
-                width: 65%;
-                height: 65%;
-            }
-        }
-    }
 
-    @media screen and (min-width: $mediaSmall) {
-        .social {
-            --ratio: 1;
-        }
-    }
-}
