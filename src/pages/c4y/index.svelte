@@ -1,28 +1,22 @@
 <script lang="ts">
     import "./index.scss";
 
-    import Page from "../../shared/page/page.svelte";
+    import Page from "../page/page.svelte";
     import C4Y from './c4y.svelte';
-    import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";
-    import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
 </script>
 
 <Page backColor="#fbc200">
-    <div class="back" slot="header_back"></div>
-    <div class="main" slot="header_main">
-        <C4Y />
-    </div>
+    <C4Y slot="image" />
+
+    <svelte:fragment slot="header_text">
+        <div>Rejoindre l'organisation</div>
+        <div> de <span class="emphasized red">Church4You</span></div>
+        <div>c'est découvrir la diversité</div>
+        <div>de l'église de Belgique</div>
+    </svelte:fragment>
 
     <section class="page-content" slot="content">
         <div class="section-container">
-            <div class="text-part">
-                <div class="hookup">
-                    <div>Rejoindre l'organisation</div>
-                    <div> de <span class="emphasized red">Church4You</span></div>
-                    <div>c'est découvrir la diversité</div>
-                    <div>de l'église de Belgique</div>
-                </div>
-            </div>
             
             <div class="inscription background-white text-red">
                 <a href="#">Formulaire d'inscription</a>

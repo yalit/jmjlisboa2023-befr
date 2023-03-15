@@ -1,30 +1,27 @@
 <script lang="ts">
     import "./index.scss";
 
-    import Page from "../../shared/page/page.svelte";
+    import Page from "../page/page.svelte";
     import Madrid from "./madrid.svelte";
     import links, {CHURCH4YOU} from "../../lib/data/links";
     import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
 </script>
 
-<Page backColor="#00893e">
-    <div class="back" slot="header_back"></div>
-    <div class="main" slot="header_main">
-        <Madrid />
-    </div>
+<Page backColor="#00893e"> 
+    <Madrid slot="image" />
 
+    <svelte:fragment slot="header_text">
+        <div>Découvre</div>
+        <div class="emphasized red">Tout sur les jmj</div>
+        <div>et en particulier</div>
+        <div>sur celle de cette année</div>
+        <div class="emphasized red">à Lisbonne</div>
+    </svelte:fragment>
+    
     <section class="page-content" slot="content">
         <div class="section-container">
-            <div class="text-part">
-                <div class="hookup">
-                    <div>Découvre</div>
-                    <div class="emphasized red">Tout sur les jmj</div>
-                    <div>et en particulier</div>
-                    <div>sur celle de cette année</div>
-                    <div class="emphasized red">à Lisbonne</div>
-                </div>
-            </div>
+            
 
             <div class="articles">
                 <article></article>

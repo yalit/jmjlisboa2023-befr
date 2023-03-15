@@ -2,18 +2,10 @@
     import './header.scss';
     import {FontAwesomeIcon} from '@fortawesome/svelte-fontawesome';
     import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
-    import {faInstagram, faYoutube, faFacebook} from '@fortawesome/free-brands-svg-icons'
     import Menu from "./menu.svelte";
+    import Socials from '../socials/socials.svelte';
 
-    export let backColor;
-    let socialBack = "#d43425";
-    let socialColor = "#fff";
-    $: {
-        if (backColor !== '#fff') {
-            socialBack = "#fff";
-            socialColor = backColor;
-        } 
-    }
+    export let backColor: string;
 
     let menuOpened = false
     const menuToggle = () => menuOpened = !menuOpened
@@ -73,23 +65,7 @@
 
         <slot name="secondary"></slot>
 
-        <div class="socials" style="--social-back: {socialBack}; --social-color: {socialColor}">
-            <div class="social">
-                <a href="https://www.instagram.com/church4you.be/?hl=fr" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} />
-                </a>
-            </div>
-            <div class="social">
-                <a href="https://www.youtube.com/JMJbelgique" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faYoutube} />
-                </a>
-            </div>
-            <div class="social">
-                <a href="https://www.facebook.com/Church4you.be/" target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faFacebook} />
-                </a>
-            </div>
-        </div>
+        <Socials />
         <div class="blank"></div>
     </div>
 </nav>

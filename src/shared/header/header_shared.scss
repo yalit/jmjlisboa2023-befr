@@ -1,0 +1,81 @@
+$logo-diameter: 30vw;
+$buttons-diameter: 30px;
+
+.logos {
+    display: flex;
+    gap: 0;
+    align-items: flex-start;
+    z-index: 50;
+    
+    & > div {
+        padding: 10px;
+        width: $logo-diameter;
+        height: $logo-diameter;
+        border-radius: 50%;
+        background-color: #fff;
+
+        &:last-child {
+            $logo-small: calc($logo-diameter * .8);
+            width: $logo-small;
+            height: $logo-small;
+        }
+    }
+}
+
+@media screen and (min-width: $mediaSmall) {
+    $logo-diameter: 20vw;
+    .logos {
+        & > div {
+            width: $logo-diameter;
+            height: $logo-diameter;
+            &:last-child {
+                $logo-small: calc($logo-diameter * .8);
+                width: $logo-small;
+                height: $logo-small;
+            }
+        }
+    }
+}
+
+.action-buttons {
+    opacity: 1;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    z-index: 100;
+
+    & > div {
+        @extend .text-white;
+        position: relative;
+        width: calc($buttons-diameter * 1.5);
+        height: calc($buttons-diameter * 1.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer;
+        &.orange {
+            @extend .background-orange;
+        }
+        &.green {
+            @extend .background-green;
+        }
+    }
+
+    @media screen and (min-width: $mediaSmall) {
+        $buttons-diameter: 60px;
+        gap: 10px;
+
+        & > div {
+            width: $buttons-diameter;
+            height: $buttons-diameter;
+            svg {
+                width: calc($buttons-diameter * .5);
+                height: calc($buttons-diameter * .5);
+            }
+        }
+    }
+}
+
+
