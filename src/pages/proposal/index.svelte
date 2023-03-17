@@ -9,22 +9,17 @@
 </script>
 
 <Page backColor="#d43425">
-    <div class="back" slot="header_back"></div>
-    <div class="main" slot="header_main">
-        <Perso />
-    </div>
+    <Perso slot="image"/>
 
+    <svelte:fragment slot="header_text">
+        <div>Tous les <span class="emphasized orange">chemins</span></div>
+        <div>mènent au Christ,</div>
+        <div>à toi de choisir</div>
+        <div>celui qui te plaît</div>
+    </svelte:fragment>
     <section class="page-content" slot="content">
         <div class="section-container">
-            <div class="text-part">
-                <div class="hookup">
-                    <div>Tous les <span class="emphasized orange">chemins</span></div>
-                    <div>mènent au Christ,</div>
-                    <div>à toi de choisir</div>
-                    <div>celui qui te plaît</div>
-                </div>
-            </div>
-
+           
             <div class="articles">
                 <article></article>
                 <article></article>

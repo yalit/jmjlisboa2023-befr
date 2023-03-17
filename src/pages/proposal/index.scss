@@ -1,49 +1,11 @@
 @import "../../_base.scss";
 
-.back {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-}
-
-.main {
-    position: relative;
-    svg {
-        position: absolute;
-        height: 70vh;
-    }
-
-    @media screen and (min-width: $mediaSmall) {
-        display: flex;
-        justify-content: center;
-        svg {
-            height: 100vh;
-        }
-    }
-}
-
 .page-content {
     background-color: $red;
 
     padding: 2rem 0;
 
     .section-container {
-        .text-part {
-            margin-top: 10px;
-            .hookup {
-                position: relative;
-                margin-left: 2rem;
-                & > div {
-                    position: inherit;
-                    display: block;
-                    width: fit-content;
-                }
-            }
-        }
-        
         .articles {
             margin-top: 3rem;
             display: flex;
