@@ -27,3 +27,11 @@ $buttons-diameter: 30px;
         }
     }
 }
+
+@media screen and (min-width: $mediaSmall) {
+    $buttons-diameter: 60px;
+    .social {
+        width: $buttons-diameter; 
+        height: $buttons-diameter; 
+    }
+}
