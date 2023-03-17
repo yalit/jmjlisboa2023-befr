@@ -34,9 +34,28 @@
             align-items: center;
             gap: 2rem;
             article {
+                position: relative;
                 width: 300px;
                 aspect-ratio: 1 / 1;
-                background-color: #fff;
+                border: 1px solid #fff;
+                border-radius: 5px;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                img {
+                    border-radius: 5px;
+                }
+                .article_title {
+                    @extend .background-white, .text-red;
+                    position: absolute;
+                    display: inline-flex;
+                    bottom: 1rem;
+                    right: calc(25% / 4);
+                    font-size: var(--tiny);
+                    padding: 5px;
+                    border-radius: 5px;
+                    text-align: right;
+                    max-width: 75%;
+                    text-transform: uppercase;
+                }
             }
         }
     

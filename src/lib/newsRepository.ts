@@ -26,6 +26,18 @@ export function findLastNews(nbNews: number = null): Promise<Array<News>> {
     })
 } 
 
+export function findAllPresentations(): Promise<Array<News>> {
+    return new Promise((res, rej) => {
+        getDataFromApi('news', {tags: '2175'}) // TODO : get correct "presentationNews" tag id from C4Y
+            .then(response => {
+                Promise.all(extractNewsFromAPI(response))
+                  .then(res)
+                  .catch(rej)
+            })
+            .catch(rej)
+    })
+} 
+
 function extractNewsFromAPI(data: []): Promise<News>[] {
     return data.map((d: any): Promise<News> => {
         return extractOneNewsFromAPI(d);
@@ -43,6 +55,6 @@ function extractOneNewsFromAPI(news: any): Promise<News> {
                 img: media
             })
         })
-        .catch(res)
+        .catch(rej)
     });
 }

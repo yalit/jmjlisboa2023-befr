@@ -134,3 +134,40 @@ section {
       @extend .background-green, .text-white;
   }
 }
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  article {
+    position: relative;
+    max-width: 300px;
+    width: 65%;
+    aspect-ratio: 1 / 1;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+    img {
+      border-radius: 5px;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+    }
+    
+    .article_title {
+      @extend .background-white, .text-red;
+      position: absolute;
+      display: inline-flex;
+      bottom: 1rem;
+      right: calc(25% / 4);
+      font-size: var(--tiny);
+      padding: 5px;
+      border-radius: 5px;
+      text-align: right;
+      max-width: 75%;
+      text-transform: uppercase;
+    }
+  }
+}

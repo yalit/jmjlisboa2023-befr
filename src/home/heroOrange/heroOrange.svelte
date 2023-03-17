@@ -30,14 +30,14 @@
             </div>
         </div>
 
-        <div class="lastnews">
+        <div class="lastnews articles">
             {#each news as article}
-                <div class="news">
+                <article class="news">
                     <img src="{article.img.src}" alt="{article.img.title}">
-                    <span class="news-title">
+                    <span class="news-title article_title">
                         <a href="{article.url}">{@html article.title}</a>
                     </span>
-                </div>
+                </article>
             {/each}
         </div>
 
