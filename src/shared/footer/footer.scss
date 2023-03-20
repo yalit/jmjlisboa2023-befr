@@ -10,8 +10,11 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    img {
+    a {
       width: calc(100%/8);
+      img {
+        width: 100%;
+      }
     }
   }
 
