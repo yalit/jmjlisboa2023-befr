@@ -3,6 +3,7 @@
     import Carousel from 'svelte-carousel';
     import { FontAwesomeIcon } from '@fortawesome/svelte-fontawesome';
     import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+    import links, { PROPOSALS_PAGE } from '../../lib/data/links';
 
     const images = [
         {
@@ -91,7 +92,7 @@
         </div>
 
         <div class="action">
-            <p><a href="#">Voir les différentes routes belges</a></p>
+            <p><a href="{links[PROPOSALS_PAGE]}">Voir les différentes routes belges</a></p>
         </div>
     </div>
 </section>

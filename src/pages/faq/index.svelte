@@ -4,6 +4,7 @@
     import Page from "../page/page.svelte";
     import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
+    import links, { CHURCH4YOU } from "../../lib/data/links";
 </script>
 
 <Page backColor="#00893e">
@@ -30,7 +31,7 @@
                     <span>Tu ne pars pas aux JMJ ? </span> <FontAwesomeIcon icon={faArrowTurnDown} />
                 </div>
                 <div class="action">
-                    <a href="#">Découvre d'autres activités, groupes et outils sur Church4You.be</a>
+                    <a href="{links[CHURCH4YOU]}" target="_blank" rel="noreferrer">Découvre d'autres activités, groupes et outils sur Church4You.be</a>
                 </div>
             </div>
         </div>

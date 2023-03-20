@@ -1,7 +1,6 @@
 <script lang="ts">
     import './questions.scss';
 
-    export let height;
     let questions;
     let scrollY = 0;
     const scrollQuestions = () => {

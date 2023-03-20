@@ -4,6 +4,7 @@
     import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
     import Menu from "./menu.svelte";
     import Socials from '../socials/socials.svelte';
+    import links, { CHURCH4YOU, LISBOA2023 } from '../../lib/data/links';
 
     export let backColor: string;
 
@@ -33,12 +34,12 @@
             <div class="banner-container">
                 <div class="logos">
                     <div class="logo-jmj">
-                        <a href="https://www.lisboa2023.org/fr" target="_blank" rel="noreferrer">
+                        <a href="{links[LISBOA2023]}" target="_blank" rel="noreferrer">
                             <img src="/img/navbar/JMJ.svg" alt="JMJ Libsoa 2023 logo">
                         </a>
                     </div>
                     <div class="logo-C4Y">
-                        <a href="https://church4you.be" target="_blank" rel="noreferrer">
+                        <a href="{links[CHURCH4YOU]}" target="_blank" rel="noreferrer">
                             <img src="/img/navbar/C4Y.svg" alt="Church4You.be Logo">
                         </a>
                     </div>
