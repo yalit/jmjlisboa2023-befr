@@ -3,6 +3,7 @@
     import {FontAwesomeIcon} from "@fortawesome/svelte-fontawesome";
     import {faArrowDown, faArrowTurnDown, faCaretRight} from "@fortawesome/free-solid-svg-icons";
     import Modal from "../../shared/modal/Modal.svelte";
+    import links, { CESTQUOI_PAGE, PROPOSALS_PAGE, REGISTER } from '../../lib/data/links';
 
     let perso; //dom node of img
     let y: number; //scroll Y
@@ -52,17 +53,17 @@
             
             <div class="actions">
                 <div class="action">
-                    <a href="#">Découvre les JMJ</a>
+                    <a href="{links[CESTQUOI_PAGE]}">Découvre les JMJ</a>
                 </div>
                 <div class="action">
                     <span>Déjà inscrit⸱e ?</span> <FontAwesomeIcon icon={faArrowTurnDown} />
                 </div>
-                <div class="action" on:click={showPopeMessage}>
-                    <a href="#">Regarde le message du Page aux jeunes inscrits</a>
+                <div class="action" on:click={showPopeMessage} on:keydown={showPopeMessage}>
+                    Regarde le message du Page aux jeunes inscrits
                 </div>
             </div>
         
-            <a href="#" class="knowmore">
+            <a href="{links[PROPOSALS_PAGE]}" class="knowmore">
                     <FontAwesomeIcon icon={faArrowDown} />
                     <p>En savoir plus sur les JMJ depuis la Belgique</p>
             </a>
@@ -80,9 +81,9 @@
                 <img src="/img/heroGreen/canape.svg" alt="Ne reste pas dans ton canapé!">
             </div>
             <div class="perso">
-                <a href="#">
+                <a href="{links[REGISTER]}" target="_blank" rel="noreferrer">
                     <img bind:this={perso} src="/img/heroGreen/perso.svg" alt="Un personnage qui marche vers la droite de l'écran" />
-                </a> <!-- put a link to the inscription form -->
+                </a>
             </div>
         </div>
     </div>

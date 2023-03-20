@@ -3,6 +3,7 @@
     import Questions from "./Questions.svelte";
     import {FontAwesomeIcon} from "@fortawesome/svelte-fontawesome";
     import {faArrowDown, faArrowTurnDown} from "@fortawesome/free-solid-svg-icons";
+    import links, { FAQ_PAGE, REGISTER } from '../../lib/data/links';
 
     let vh = visualViewport.height;
     let heartAnimationBounds = {start: vh / 2, end: vh / 10}; //start must be higher than end as we go from bottom
@@ -49,9 +50,9 @@
             </div>
 
             <div class="actions">
-                <div class="action"><a href="#">Consulte notre FAQ</a></div>
+                <div class="action"><a href="{links[FAQ_PAGE]}">Consulte notre FAQ</a></div>
                 <div class="action jemelance"><span>On verra cela après, je me lance</span><FontAwesomeIcon icon={faArrowTurnDown} /></div>
-                <div class="action"><a href="#">S'inscrire à la route Church4You</a></div>
+                <div class="action"><a href="{links[REGISTER]}" target="_blank" rel="noreferrer">S'inscrire à la route Church4You</a></div>
             </div>
         </div>
     </div>
