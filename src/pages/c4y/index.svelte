@@ -3,6 +3,7 @@
 
     import Page from "../page/page.svelte";
     import C4Y from './c4y.svelte';
+    import links, { REGISTER } from "../../lib/data/links";
 </script>
 
 <Page backColor="#fbc200">
@@ -19,7 +20,7 @@
         <div class="section-container">
             
             <div class="inscription background-white text-red">
-                <a href="#">Formulaire d'inscription</a>
+                <a href="{links[REGISTER]}" target="_blank" rel="noreferrer">Formulaire d'inscription</a>
             </div>
 
             <div class="text">
@@ -52,7 +53,7 @@
             </div>
 
             <div class="inscription background-white text-red">
-                <a href="#">Formulaire d'inscription</a>
+                <a href="{links[REGISTER]}" target="_blank" rel="noreferrer">Formulaire d'inscription</a>
             </div>
         </div>
     </section>

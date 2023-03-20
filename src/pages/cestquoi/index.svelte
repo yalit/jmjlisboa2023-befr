@@ -40,7 +40,7 @@
                     <article class="news">
                         <img src="{article.img.src}" alt="{article.img.title}">
                         <span class="article_title">
-                            <a href="{article.url}">{@html article.title}</a>
+                            <a href="{article.url}" target="_blank" rel="noreferrer">{@html article.title}</a>
                         </span>
                     </article>
                 {/each}
@@ -52,7 +52,7 @@
                     <span>Tu ne pars pas aux JMJ ? </span> <FontAwesomeIcon icon={faArrowTurnDown} />
                 </div>
                 <div class="action">
-                    <a href={links[CHURCH4YOU]} target="_blank">Découvre d'autres activités, groupes et outils sur Church4You.be</a>
+                    <a href={links[CHURCH4YOU]} target="_blank" rel="noreferrer">Découvre d'autres activités, groupes et outils sur Church4You.be</a>
                 </div>
             </div>
         </div>
