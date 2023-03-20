@@ -5,6 +5,7 @@
     import {FontAwesomeIcon} from "@fortawesome/svelte-fontawesome";
     import {faArrowTurnDown} from "@fortawesome/free-solid-svg-icons";
     import links, { CESTQUOI_PAGE, CHURCH4YOU } from '../../lib/data/links';
+    import NewsArticle from '../../shared/newsArticle/NewsArticle.svelte';
 
     // is a News
     let news = [];
@@ -33,12 +34,7 @@
 
         <div class="lastnews articles">
             {#each news as article}
-                <article class="news">
-                    <img src="{article.img.src}" alt="{article.img.title}">
-                    <span class="news-title article_title">
-                        <a href="{article.url}" target="_blank" rel="noreferrer">{@html article.title}</a>
-                    </span>
-                </article>
+                <NewsArticle article={article} />
             {/each}
         </div>
 
