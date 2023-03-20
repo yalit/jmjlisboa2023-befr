@@ -30,14 +30,16 @@
       border-radius: 5px;
       font-size: var(--medium);
       z-index: 10000;
+      text-align: center;
       &.full {
         padding: 1rem;
       }
-      a {
+      a, .contact {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 10px;
+        cursor: pointer;
       }
 
       @media screen and (min-width: $mediaSmall) {
