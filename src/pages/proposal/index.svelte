@@ -3,9 +3,29 @@
 
     import Page from "../page/page.svelte";
     import Perso from "./perso.svelte";
-    import links, {CHURCH4YOU} from "../../lib/data/links";
+    import links, {C4Y_PAGE, CHURCH4YOU} from "../../lib/data/links";
     import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
+    import { findOne, type News } from "../../lib/newsRepository";
+    import { onMount } from "svelte";
+    import NewsArticle from "../../shared/newsArticle/NewsArticle.svelte";
+
+    let jmjRoute: News = {
+        id: 1,
+        title: "La route Church4You - C4Y",
+        url: links[C4Y_PAGE],
+        img: {
+            src: '/img/pages/LES_JMJ_AVEC_CHURCH4YOU.png',
+            title: ""
+        }
+    } 
+    let allRoutesNews: News = null;
+    onMount(() => {
+        findOne(45629) //id of article here : https://church4you.be/news/jmj-les-differentes-routes/
+        .then(data => {
+            allRoutesNews = data
+        })
+    });
 </script>
 
 <Page backColor="#d43425">
@@ -21,10 +41,8 @@
         <div class="section-container">
            
             <div class="articles">
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
+                <NewsArticle article={jmjRoute} targetBlank={false}/>
+                <NewsArticle article={allRoutesNews} />
             </div>
 
             <div class="actions">

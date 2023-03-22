@@ -37,6 +37,21 @@ $buttons-diameter: 30px;
     }
 }
 
+@media screen and (min-width: $mediaMedium) {
+    $logo-diameter: 20vh;
+    .logos {
+        & > div {
+            width: $logo-diameter;
+            height: $logo-diameter;
+            &:last-child {
+                $logo-small: calc($logo-diameter * .8);
+                width: $logo-small;
+                height: $logo-small;
+            }
+        }
+    }
+}
+
 .action-buttons {
     opacity: 1;
     display: flex;

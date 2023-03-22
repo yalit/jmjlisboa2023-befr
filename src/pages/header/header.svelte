@@ -26,6 +26,7 @@
             </a>
         </div>
     </div>
+    
     <div class="action-buttons">
         <div class="action-button orange">
             <a href={links[REGISTER]} target="_blank" rel="noreferrer">
