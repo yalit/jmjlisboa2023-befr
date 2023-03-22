@@ -13,6 +13,7 @@ export default defineConfig({
         proposal: resolve(__dirname, 'proposal.html'),
         c4y: resolve(__dirname, 'c4y.html'),
         faq: resolve(__dirname, 'faq.html'),
+        blog: resolve(__dirname, 'blog.html'),
       },
     },
   },

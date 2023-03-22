@@ -4,6 +4,7 @@
     export let article: News;
 
     export let targetBlank = true;
+    export let showDate = false;
 
     const clickOnImg = (e) => {
         const img = e.target;
@@ -14,6 +15,7 @@
 
 {#if article}
     <article class="news">
+        {#if showDate}<span class="news-date">{article.date.getDate() + "/" + article.date.getMonth()}</span>{/if}
         <img src="{article.img.src}" alt="{article.img.title}" on:click={clickOnImg} on:keydown={clickOnImg}>
         <span class="news-title article_title">
             {#if targetBlank}
