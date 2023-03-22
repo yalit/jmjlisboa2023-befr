@@ -6,6 +6,14 @@
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
     import links, { CHURCH4YOU } from "../../lib/data/links";
     import Faq from "./faq.svelte";
+    import FaqTab from "./FAQTab.svelte";
+    import { tagIDs, tags, type TagId } from "./faqs";
+
+    let currentTag: TagId = 'general';
+
+    const switchTag = (e) => {
+        currentTag = e.target.dataset.tag;
+    }
 </script>
 
 <Page backColor="#d43425">
@@ -20,9 +28,18 @@
     <section class="page-content" slot="content">
         <div class="section-container">
             
-            <div class="filters"></div>
+            <div class="filters">
+                {#each tagIDs as tagID}
+                    <div class="tag" data-tag={tagID} on:click={switchTag} on:keydown={switchTag}>
+                        {tags[tagID]}
+                    </div>
+                {/each}
+            </div>
 
-            
+            {#each tagIDs as tagID}
+                <FaqTab tagID={tagID} visible={tagID === currentTag}/>
+            {/each}
+
             <div class="actions">
                 <div class="action none"></div>
                 <div class="action">
