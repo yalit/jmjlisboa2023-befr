@@ -5,12 +5,13 @@ export interface News {
     id: number,
     title: string,
     url: string,
-    img: Media
+    img: Media,
+    date: Date
 }
 
 export function findLastNews(nbNews: number = null): Promise<Array<News>> {
     return new Promise((res, rej) => {
-        getDataFromApi('news', {tags: '2175'}) // Tag id for "jmj" tag on C4Y
+        getDataFromApi('news', {tags: '2655'}) // Tag id for "newsJMJ" tag on C4Y
             .then(response => {
                 Promise.all(extractNewsFromAPI(response))
                   .then(allNews =>{
@@ -61,12 +62,14 @@ function extractNewsFromAPI(data: []): Promise<News>[] {
 function extractOneNewsFromAPI(news: any): Promise<News> {
     return new Promise((res, rej) => {
         getMedia(news.featured_media)
-        .then((media: Media) => {            
+        .then((media: Media) => {  
+            console.log("News", news)          
             res({
                 id: news.id,
                 title: news.title.rendered,
                 url: news.link,
-                img: media
+                img: media,
+                date: new Date(news.date)
             })
         })
         .catch(rej)
