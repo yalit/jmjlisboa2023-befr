@@ -9,7 +9,12 @@
     const clickOnImg = (e) => {
         const img = e.target;
         const target = img.parentNode.children[1].children[0].getAttribute("href");
-        window.open(target, '_blank').focus();
+        console.log(targetBlank)
+        if (targetBlank) {
+            window.open(target, '_blank').focus();
+        } else {
+            window.location = target;
+        }
     }
 </script>
 
