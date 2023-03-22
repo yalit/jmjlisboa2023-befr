@@ -1,0 +1,20 @@
+.faq {
+    margin-bottom: 0.5rem;
+    .question {
+        font-family: donJose;
+        font-size: var(--medium);
+        margin-bottom: 0.5rem;
+        cursor: pointer;
+    }
+    .answer {
+        display: none;
+        padding-left: 1rem;
+    }
+
+    &.opened {
+        margin-bottom: 1rem;
+        .answer {
+            display: block;
+        }
+    }
+}

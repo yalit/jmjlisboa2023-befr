@@ -5,15 +5,16 @@
     export let tagID: TagId;
     export let visible: boolean = false;
 
+    let currentQuestion: number = 0;
+
     const faqs = getFaqs(tagID)
-    console.log(tagID);
+    
 </script>
 
 {#if visible}
     <div class="tab">
-        {tagID}
-        {#each faqs as faq}
-            <FaqQuestion faq={faq} />
+        {#each faqs as faq, idx}
+            <FaqQuestion faq={faq} opened={idx == currentQuestion} idx={idx} switchQuestion={(idx => currentQuestion = idx)}/>
         {/each}
     </div>
 {/if}
