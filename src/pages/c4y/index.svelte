@@ -3,7 +3,7 @@
 
     import Page from "../page/page.svelte";
     import C4Y from './c4y.svelte';
-    import links, { REGISTER } from "../../lib/data/links";
+    import links, { PROPOSALS_PAGE, REGISTER } from "../../lib/data/links";
 </script>
 
 <Page backColor="#fbc200">
@@ -31,7 +31,7 @@
                 </div>
                 <div>
                     Les jeunes qui ont entre 16 et 17 ans peuvent également se joindre à cette route mais devront obligatoirement
-                    être accompagné d'une personne majeure. Par ailles, une route adaptée à leur âge est proposée par la
+                    être accompagné d'une personne majeure. Par ailleurs, une route adaptée à leur âge est proposée par la
                     Communauté de l'Emmanuel.
                 </div>
                 <div class="sub-title">
@@ -39,16 +39,11 @@
                 </div>
                 <div>
                     Communauté du Chemin Neuf, Emmanuel Belgique, la Fraternité de Tibériade, les Assomptionnistes, les
-                    religieuses de l'Assomption, le mouvement des Focolari, Fondacio, les Serviteurs de l'Amour et les
+                    religieuses de l'Assomption, Fondacio, les Serviteurs de l'Amour et les
                     Chercheurs de Dieu et la Famille MArie-Jeunesse.
                 </div>
                 <div class="sub-title">
-                    Deux Formules sont proposées par CHURCH4YOU
-                </div>
-                <div>
-                    En s'inscrivant à l'une des formules Church4You, il est entendu que le jeune s'engage à prendre part
-                    à la route complète, du départ de la Belgique au retour dans les diocèses, en passant par Portimão
-                    et/ou Lisbonne. Il ne sera pas possible de rejoindre le groupe en cours de route par ses propres moyens.
+                    <a href="{links[PROPOSALS_PAGE]}">Différentes formules sont proposées par CHURCH4YOU</a>
                 </div>
             </div>
 

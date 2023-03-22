@@ -1,13 +1,5 @@
 @import "../../_base.scss";
 
-@media screen and (min-width: $mediaSmall) {
-
-    .text_part {
-        position: absolute;
-        top: 47vw !important;
-        left: 2rem;
-    }
-}
 
 .page-content {
     background-color: $orange;
@@ -39,7 +31,9 @@
             display: flex;
             flex-direction: column;
             gap: 1.5rem;
-            text-align: justify-all;
+            text-align: justify;
+            padding: 0 5px;
+            font-size: 1.4rem;
             .sub-title {
                 @extend .text-red;
                 font-family: donJose, sans-serif;

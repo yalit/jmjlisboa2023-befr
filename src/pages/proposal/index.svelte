@@ -17,7 +17,8 @@
         img: {
             src: '/img/pages/LES_JMJ_AVEC_CHURCH4YOU.png',
             title: ""
-        }
+        },
+        date: new Date()
     } 
     let allRoutesNews: News = null;
     onMount(() => {
