@@ -80,13 +80,19 @@ nav {
 
     .text_part {
         position: absolute;
-        top: 35vw;
+        top: 40vh;
         left: 2rem;
 
     }
 }
 
 @media screen and (min-width: $mediaLarge) {
+    .main {
+        width: 45%;
+        margin: 0;
+        margin-left: 55%;
+    }
+
     .text_part {
         .hookup {
             font-size: var(--large);
@@ -95,9 +101,9 @@ nav {
 }
 
 @media screen and (min-width: $mediaXLarge) {
-    .text_part {
-        .hookup {
-            font-size: var(--xl);
-        }
+    .main {
+        width: 40%;
+        margin: 0;
+        margin-left: 60%;
     }
 }
