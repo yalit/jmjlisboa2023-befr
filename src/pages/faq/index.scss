@@ -1,7 +1,34 @@
 @import "../../_base.scss";
 
+nav {
+    .text_part {
+        .hookup {
+            font-size: 2rem;
+            & > div {
+                padding-left: 0.3rem;
+            }
+            .big {
+                font-size: 8rem;
+                margin-bottom: -2rem;
+                padding-left: 0;
+            }
+        }
+    }
+
+    .main {
+        .image {
+            svg {
+                position: absolute;
+                bottom: 15%;
+                right: 10%;
+                width: 65%;
+            }
+        }
+    }
+}
+
 .page-content {
-    background-color: $green;
+    background-color: $red;
 
     padding: 2rem 0;
 

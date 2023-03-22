@@ -5,26 +5,24 @@
     import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
     import links, { CHURCH4YOU } from "../../lib/data/links";
+    import Faq from "./faq.svelte";
 </script>
 
-<Page backColor="#00893e">
+<Page backColor="#d43425">
+    <Faq slot="image" />
+
     <svelte:fragment slot="header_text">
-        <div>Découvre</div>
-        <div class="emphasized red">Tout sur les jmj</div>
-        <div>et en particulier</div>
-        <div>sur celle de cette année</div>
-        <div class="emphasized red">à Lisbonne</div>
+        <div class="big">FAQ</div>
+        <div>Questions</div>
+        <div>Récurrentes</div>
     </svelte:fragment>
 
     <section class="page-content" slot="content">
         <div class="section-container">
-            <div class="articles">
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
-            </div>
+            
+            <div class="filters"></div>
 
+            
             <div class="actions">
                 <div class="action none"></div>
                 <div class="action">
