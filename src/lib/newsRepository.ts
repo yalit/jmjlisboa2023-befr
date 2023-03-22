@@ -10,7 +10,7 @@ export interface News {
 
 export function findLastNews(nbNews: number = null): Promise<Array<News>> {
     return new Promise((res, rej) => {
-        getDataFromApi('news', {tags: '2175'})
+        getDataFromApi('news', {tags: '2175'}) // Tag id for "jmj" tag on C4Y
             .then(response => {
                 Promise.all(extractNewsFromAPI(response))
                   .then(allNews =>{
@@ -42,7 +42,7 @@ export function findOne(newsId: number = null): Promise<News> {
 
 export function findAllPresentations(): Promise<Array<News>> {
     return new Promise((res, rej) => {
-        getDataFromApi('news', {tags: '2175'}) // TODO : get correct "presentationNews" tag id from C4Y
+        getDataFromApi('news', {tags: '2658'}) // Tag id for "presentationNews" tag on C4Y
             .then(response => {
                 Promise.all(extractNewsFromAPI(response))
                   .then(res)

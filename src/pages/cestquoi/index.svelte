@@ -6,17 +6,16 @@
     import links, {CHURCH4YOU} from "../../lib/data/links";
     import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
-    import { findLastNews, type News } from "../../lib/newsRepository";
+    import { findAllPresentations as findAllJMJPresentations, type News } from "../../lib/newsRepository";
     import { onMount } from "svelte";
+    import NewsArticle from "../../shared/newsArticle/NewsArticle.svelte";
 
     // is a News
-    let news: News[] = [];
+    let articles: News[] = [];
 
     onMount(() => {
-        findLastNews()
-        .then(data => {
-            news = data
-        })
+        findAllJMJPresentations()
+        .then(data => articles = data)
     });
 </script>
 
@@ -36,13 +35,8 @@
             
 
             <div class="articles">
-                {#each news as article}
-                    <article class="news">
-                        <img src="{article.img.src}" alt="{article.img.title}">
-                        <span class="article_title">
-                            <a href="{article.url}" target="_blank" rel="noreferrer">{@html article.title}</a>
-                        </span>
-                    </article>
+                {#each articles as article}
+                    <NewsArticle article={article} />
                 {/each}
             </div>
 
