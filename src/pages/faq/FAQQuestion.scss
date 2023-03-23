@@ -3,12 +3,18 @@
     .question {
         font-family: donJose;
         font-size: var(--medium);
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
         cursor: pointer;
     }
     .answer {
         display: none;
-        padding-left: 1rem;
+        padding: 1rem;
+        font-size: 1.2rem;
+        color:rgb(255, 255, 255);
+        line-height: 1.5rem;
+        a {
+            text-decoration: underline;
+        }
     }
 
     &.opened {

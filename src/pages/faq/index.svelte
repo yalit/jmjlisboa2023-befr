@@ -7,7 +7,7 @@
     import links, { CHURCH4YOU } from "../../lib/data/links";
     import Faq from "./faq.svelte";
     import FaqTab from "./FAQTab.svelte";
-    import { tagIDs, tags, type TagId } from "./faqs";
+    import { tagIDs, tags, type TagId } from "../../lib/data/faqs";
 
     let currentTag: TagId = 'general';
 

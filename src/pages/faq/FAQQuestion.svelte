@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type { FAQ } from "./faqs";
+    import type { FAQ } from "../../lib/data/faqs";
     import './FAQQuestion.scss';
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
     import { faCaretDown, faCaretRight } from "@fortawesome/free-solid-svg-icons";
