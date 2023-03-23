@@ -49,8 +49,8 @@ nav {
             height: 100%;
             .logos {
                 position: absolute;
-                bottom: calc(-1 * $logo-diameter * .3);
-                right: calc(100vw - ($logo-diameter * 1.75));
+                bottom: calc(-1 * var(--logo-diameter) * .3);
+                right: calc(100vw - (var(--logo-diameter) * 1.75));
 
                 & > div {
                     margin: 0;
@@ -58,7 +58,7 @@ nav {
 
                     &:last-child {
                         margin-top: 0;
-                        margin-left: calc(-1 * $logo-diameter * .2);
+                        margin-left: calc(-1 * var(--logo-diameter) * .2);
                     }
                     img {
                         transform: rotate(15deg);
@@ -68,23 +68,21 @@ nav {
         }
 
         @media screen and (min-width: $mediaSmall) {
-            $logo-diameter: 20vw;
             top: -100vh;
             right: 50vw;
             width: 60vw;
             .banner-container {
                 .logos {
-                    bottom: calc(-1 * $logo-diameter * .95);
-                    right: calc(55vw - ($logo-diameter * 1.75));
-                    & > div {
-                        width: $logo-diameter;
-                        height: $logo-diameter;
-                        &:last-child {
-                            $logo-small: calc($logo-diameter * .8);
-                            width: $logo-small;
-                            height: $logo-small;
-                        }
-                    }
+                    bottom: calc(-1 * var(--logo-diameter) * .80);
+                    right: calc(55vw - (var(--logo-diameter) * 2));
+                }
+            }
+        }
+        @media screen and (min-width: $mediaLarge) {
+            .banner-container {
+                .logos {
+                    bottom: calc(-1 * var(--logo-diameter) * .80);
+                    right: calc(55vw - (var(--logo-diameter) * 2));
                 }
             }
         }
