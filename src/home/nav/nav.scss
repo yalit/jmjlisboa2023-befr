@@ -6,8 +6,6 @@ nav {
 
     position: relative;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
     overflow: hidden;
 
     .back {
@@ -17,6 +15,8 @@ nav {
         left: 0;
         right: 0;
         background-image: var(--back-image);
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .halo {

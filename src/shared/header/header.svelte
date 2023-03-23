@@ -4,7 +4,7 @@
     import {faBars, faTimes} from '@fortawesome/free-solid-svg-icons'
     import Menu from "./menu.svelte";
     import Socials from '../socials/socials.svelte';
-    import links, { CHURCH4YOU, LISBOA2023 } from '../../lib/data/links';
+    import links, { CHURCH4YOU, LISBOA2023, REGISTER } from '../../lib/data/links';
 
     export let backColor: string;
 
@@ -51,7 +51,9 @@
 
         <div class="action-buttons">
             <div class="action-button orange">
-                <img src="/img/navbar/ticket.svg" alt="Ticket pour les JMJ">
+                <a href={links[REGISTER]} target="_blank" rel="noreferrer">
+                    <img src="/img/navbar/ticket.svg" alt="Ticket pour les JMJ" />
+                </a>
             </div>
             <div class="action-button green" on:click={menuToggle}>
                 {#if menuOpened}

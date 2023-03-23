@@ -1,7 +1,7 @@
-$logo-diameter: 30vw;
 $buttons-diameter: 30px;
 
 .logos {
+    --logo-diameter: 30vw;
     display: flex;
     gap: 0;
     align-items: flex-start;
@@ -9,46 +9,40 @@ $buttons-diameter: 30px;
     
     & > div {
         padding: 10px;
-        width: $logo-diameter;
-        height: $logo-diameter;
+        width: var(--logo-diameter);
+        height: var(--logo-diameter);
         border-radius: 50%;
         background-color: #fff;
 
         &:last-child {
-            $logo-small: calc($logo-diameter * .8);
-            width: $logo-small;
-            height: $logo-small;
+            --logo-small: calc(var(--logo-diameter) * .8);
+            width: var(--logo-small);
+            height: var(--logo-small);
         }
     }
 }
 
 @media screen and (min-width: $mediaSmall) {
-    $logo-diameter: 20vw;
     .logos {
-        & > div {
-            width: $logo-diameter;
-            height: $logo-diameter;
-            &:last-child {
-                $logo-small: calc($logo-diameter * .8);
-                width: $logo-small;
-                height: $logo-small;
-            }
-        }
+        --logo-diameter: 20vw;
     }
 }
 
 @media screen and (min-width: $mediaMedium) {
-    $logo-diameter: 20vh;
     .logos {
-        & > div {
-            width: $logo-diameter;
-            height: $logo-diameter;
-            &:last-child {
-                $logo-small: calc($logo-diameter * .8);
-                width: $logo-small;
-                height: $logo-small;
-            }
-        }
+        --logo-diameter: 20vh;
+    }
+}
+
+@media screen and (min-width: $mediaLarge) {
+    .logos {
+        --logo-diameter: 25vh;
+    }
+}
+
+@media screen and (min-width: $mediaXLarge) {
+    .logos {
+        --logo-diameter: 25vh;
     }
 }
 

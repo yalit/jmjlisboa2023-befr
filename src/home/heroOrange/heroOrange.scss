@@ -43,6 +43,10 @@
         justify-content: flex-start;
         align-items: flex-start;
         color: white;
+
+        @media screen and (min-width: $mediaSmall) {
+            margin-top: 0;
+        }
     }
 
     .actions {

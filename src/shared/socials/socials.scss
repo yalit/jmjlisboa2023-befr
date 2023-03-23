@@ -7,8 +7,8 @@ $buttons-diameter: 30px;
     gap: 5px;
     justify-content: flex-end;
     .social {
-        width: $buttons-diameter; 
-        height: $buttons-diameter; 
+        width: calc($buttons-diameter * 1.5); 
+        height: calc($buttons-diameter * 1.5); 
         border-radius: 50%;
         display: flex;
         justify-content: center;
