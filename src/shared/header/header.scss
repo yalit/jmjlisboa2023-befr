@@ -155,6 +155,10 @@ nav {
         @media screen and (min-width: $mediaSmall) {
             padding-top: 7.5vw;
         }
+
+        a {
+            width: 100%;
+        }
     }
 
     .socials {
