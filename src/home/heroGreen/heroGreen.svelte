@@ -58,7 +58,7 @@
                 <div class="action">
                     <span>Déjà inscrit⸱e ?</span> <FontAwesomeIcon icon={faArrowTurnDown} />
                 </div>
-                <div class="action" on:click={showPopeMessage} on:keydown={showPopeMessage}>
+                <div class="action popeMessage" on:click={showPopeMessage} on:keydown={showPopeMessage}>
                     Regarde le message du Page aux jeunes inscrits
                 </div>
             </div>
