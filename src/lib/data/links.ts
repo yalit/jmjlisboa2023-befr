@@ -12,6 +12,9 @@ export const PJ_NAMUR = 'pjnamur';
 export const PJ_LIEGE = 'pjliege';
 export const PJ_TOURNAI = 'pjtournai';
 
+export const FESTIVAL_JMJ = 'festivalJMJ'
+export const ALL_ROADS_C4Y = 'C4Y_allroads'
+
 export const C4Y_PAGE = 'c4y_page'
 export const CESTQUOI_PAGE = 'cestquoi_page';
 export const BLOG_PAGE = 'blog_page';
@@ -40,6 +43,8 @@ const links: {[k: string]: string} = {
   [PJ_NAMUR]: 'https://church4you.be/namur-lux',
   [PJ_LIEGE]: 'https://church4you.be/liege',
   [PJ_TOURNAI]: 'https://church4you.be/tournai',
+  [FESTIVAL_JMJ]: 'https://church4you.be/bruxelles/news/echos-festival-jmj-2022-a-maredsous/',
+  [ALL_ROADS_C4Y]: 'https://church4you.be/news/jmj-les-differentes-routes/',
   [EMMANUEL]: 'https://emmanuelco.be/fr/',
   [FONDACIO]: 'https://fondacio.be/',
   [CHEMINNEUF]: 'https://www.chemin-neuf.be/fr/',
