@@ -28,9 +28,9 @@ nav {
         top: 0;
         left: 0;
         @media screen and (min-width: $mediaSmall) {
-            width: 10vw;
+            width: 10%;
             height: 100vh;
-            left: 90vw;
+            left: 90%;
             top: 0;
         }
     }
@@ -96,7 +96,7 @@ nav {
         position: absolute;
         content: "";
         background-color: var(--back-color);
-        width: 1000vw;
+        width: 300vw;
         height: 20vh;
         bottom: 30vh;
         right: 0;
@@ -106,9 +106,10 @@ nav {
         @media screen and (min-width: $mediaSmall) {
             top: 0;
             bottom: 0;
-            right: 10vw;
+            transform-origin: top right;
+            right: 10%;
             height: 100vh;
-            transform: rotate(-75deg);
+            transform: rotate(-80deg);
         }
     }
 
