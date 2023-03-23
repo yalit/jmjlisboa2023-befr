@@ -5,25 +5,40 @@
     import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
     import links, { CHURCH4YOU } from "../../lib/data/links";
+    import Faq from "./faq.svelte";
+    import FaqTab from "./FAQTab.svelte";
+    import { tagIDs, tags, type TagId } from "../../lib/data/faqs";
+
+    let currentTag: TagId = 'general';
+
+    const switchTag = (e) => {
+        currentTag = e.target.dataset.tag;
+    }
 </script>
 
-<Page backColor="#00893e">
+<Page backColor="#d43425">
+    <Faq slot="image" />
+
     <svelte:fragment slot="header_text">
-        <div>Découvre</div>
-        <div class="emphasized red">Tout sur les jmj</div>
-        <div>et en particulier</div>
-        <div>sur celle de cette année</div>
-        <div class="emphasized red">à Lisbonne</div>
+        <div class="big">FAQ</div>
+        <div>Questions</div>
+        <div>Récurrentes</div>
     </svelte:fragment>
 
     <section class="page-content" slot="content">
         <div class="section-container">
-            <div class="articles">
-                <article></article>
-                <article></article>
-                <article></article>
-                <article></article>
+            
+            <div class="filters">
+                {#each tagIDs as tagID}
+                    <div class="tag" data-tag={tagID} on:click={switchTag} on:keydown={switchTag}>
+                        {tags[tagID]}
+                    </div>
+                {/each}
             </div>
+
+            {#each tagIDs as tagID}
+                <FaqTab tagID={tagID} visible={tagID === currentTag}/>
+            {/each}
 
             <div class="actions">
                 <div class="action none"></div>

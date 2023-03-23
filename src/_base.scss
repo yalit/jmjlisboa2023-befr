@@ -104,6 +104,9 @@ section {
           @extend .text-white;
           background: none;
       }
+      &.none {
+        display: none;
+    }
   }
 }
 
