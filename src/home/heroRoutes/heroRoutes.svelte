@@ -19,7 +19,7 @@
             target: "_blank"
         },
         {
-            url: '/img/heroRoutes/routeX.svg',
+            url: '/img/heroRoutes/c4y.jpg',
             alt: "Logo de la route C4Y",
             link: links[C4Y_PAGE],
             target: "_self"
