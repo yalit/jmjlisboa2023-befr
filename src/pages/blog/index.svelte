@@ -8,6 +8,7 @@
     import { findLastNews, type News } from "../../lib/newsRepository";
     import { onMount } from "svelte";
     import NewsArticle from "../../shared/newsArticle/NewsArticle.svelte";
+    import Blog from "./blog.svelte";
 
     // is a News
     let articles: News[] = [];
@@ -19,7 +20,8 @@
 </script>
 
 <Page backColor="#00893e"> 
-
+    <Blog slot="image" />
+    
     <svelte:fragment slot="header_text">
         <div>TBD</div>
         <div class="emphasized red">Tout sur les jmj</div>

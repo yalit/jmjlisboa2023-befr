@@ -9,6 +9,16 @@
     background: #fff;
 }
 
+nav {
+    .main {
+        .image {
+            svg {
+                right: 10%;
+            }
+        }
+    }
+}
+
 .page-content {
     background-color: $green;
 
