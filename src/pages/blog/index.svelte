@@ -19,15 +19,14 @@
     });
 </script>
 
-<Page backColor="#00893e"> 
+<Page backColor="#fbc200"> 
     <Blog slot="image" />
     
     <svelte:fragment slot="header_text">
-        <div>TBD</div>
-        <div class="emphasized red">Tout sur les jmj</div>
-        <div>et en particulier</div>
-        <div>sur celle de cette année</div>
-        <div class="emphasized red">à Lisbonne</div>
+        <div>REtrouve ici</div>
+        <div class="emphasized red">les dernières nouvelles</div>
+        <div>mais aussi pleins d'autres</div>
+        <div>articles sur <span class="emphasized red">C4Y</span></div>
     </svelte:fragment>
     
     <section class="page-content" slot="content">
