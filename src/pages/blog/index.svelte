@@ -19,7 +19,7 @@
     });
 </script>
 
-<Page backColor="#fbc200"> 
+<Page backColor="#fbc200">
     <Blog slot="image" />
     
     <svelte:fragment slot="header_text">
