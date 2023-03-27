@@ -1,10 +1,21 @@
 @import "../../_base.scss";
 
+nav {
+    @media screen and (min-width: $mediaMedium) {
+        .text_part {
+            .hookup {
+                margin-top: 7rem;
+            }
+        }
+    }
+}
+
 
 .page-content {
     background-color: $orange;
 
     .section-container {
+        color: white;
         padding: 2rem;
         .text-part {
             .hookup {
