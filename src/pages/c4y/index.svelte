@@ -35,7 +35,7 @@
                     Communauté de l'Emmanuel.
                 </div>
                 <div class="sub-title">
-                    Plusieurs communautés ou mouvemeents participeront à la route Church4you
+                    Plusieurs communautés et mouvements participeront à la route Church4you
                 </div>
                 <div>
                     Communauté du Chemin Neuf, Emmanuel Belgique, la Fraternité de Tibériade, les Assomptionnistes, les
