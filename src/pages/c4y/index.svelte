@@ -3,7 +3,7 @@
 
     import Page from "../page/page.svelte";
     import C4Y from './c4y.svelte';
-    import links, { PROPOSALS_PAGE, REGISTER } from "../../lib/data/links";
+    import links, { C4Y_INFOS_PRATIQUES, PROPOSALS_PAGE, REGISTER } from "../../lib/data/links";
 </script>
 
 <Page backColor="#fbc200">
@@ -34,8 +34,11 @@
                     être accompagné d'une personne majeure. Par ailleurs, une route adaptée à leur âge est proposée par la
                     Communauté de l'Emmanuel.
                 </div>
+                <div class="inscription background-white text-red">
+                    <a href="{links[C4Y_INFOS_PRATIQUES]}" target="_blank" rel="noreferrer">Retrouves plus d'infos sur C4Y.be</a>
+                </div>
                 <div class="sub-title">
-                    Plusieurs communautés ou mouvemeents participeront à la route Church4you
+                    Plusieurs communautés et mouvements participeront à la route Church4you
                 </div>
                 <div>
                     Communauté du Chemin Neuf, Emmanuel Belgique, la Fraternité de Tibériade, les Assomptionnistes, les

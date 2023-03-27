@@ -28,7 +28,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Quel est l'impact écologique d'un tel rassemblement?",
-        answer: `Le Jour de la Terre, le 22 avril 2022, a été publiée la lettre d'engagement accessible via le lien <a href="https://www.lisboa2023.org/pt/artigo/juntos-por-uma-jornada-mundial-da-juventude-mais-sustentavel">lisboa2023.org/pt/artigo/juntos-por-uma- more- journée-mondiale-de-la-jeunesse-durable</a>`,
+        answer: `Les organisateurs mettent un point d’honneur à respecter l’environnement. Les JMJ Lisbonne 2023 seront encore plus durables si chacun des pèlerins, jusqu’au dernier à s'y inscrire, contribue à ce but. Nous avons besoin de tous et toutes nous mobiliser afin d'atteindre l'empreinte environnementale la plus faible possible. Vous pourrez retrouver la lettre d’engagement des organisateurs, publiées le 22 avril 2022, jour de la Terre: <a href="https://www.lisboa2023.org/fr/engagement-durabilite">https://www.lisboa2023.org/fr/engagement-durabilite</a>`,
         tags: ['general']
     },
     {
@@ -48,7 +48,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Quelles sont les formules proposées ?",
-        answer: `Church4you te propose une formule “All in”, qui comprend une semaine au festival “Welcome to paradise” à Portimão suivi de la semaine JMJ. Si tu ne souhaites participer qu'aux JMJ, tu peux choisir la formule express. Ces deux formules comprennent les transports, les logements, les repas, ainsi que tous les frais logistiques et administratifs. Si tu souhaites nous rejoindre à Lisbonne par tes propres moyens, nous proposons une formule “sans transport”.`,
+        answer: `Church4you te propose une formule “All in”, qui comprend une semaine au festival “Welcome to paradise” à Portimão suivi de la semaine JMJ. Si tu ne souhaites participer qu’aux JMJ, tu peux choisir la formule express. Ces deux formules comprennent les transports, les logements, les repas, ainsi que tous les frais logistiques et administratifs. Si tu souhaites nous rejoindre à Lisbonne par tes propres moyens, nous proposons la formule Express “sans transport”.`,
         tags: ['c4y']
     },
     {
@@ -78,7 +78,8 @@ const faqs: FAQ[] = [
     },
     {
         question: "Je souhaite vous rejoindre par mes propres moyens sur place, est-ce possible?",
-        answer: `C'est possible sous certaines conditions. Tout d'abord, choisis l'option “express sans transport” dans le formulaire d'inscription.`,
+        answer: `C’est possible sous certaines conditions avec l’option Express, sans transport. <br />
+        En choisissant cette option, tu t’engages à rejoindre la délégation C4Y le 31/07 fin d’après-midi (non négociable) à Lisbonne, au lieu qui sera communiqué. Tu pourras repartir par tes propres moyens à partir du 6 août (après la messe finale). Si tu es mineur (âgé de 16 ou 17 ans révolu le jour du départ), tu devras voyager avec le responsable légal de ton groupe pendant tout le séjour. Attention, tu ne pourras pas utiliser les cars de C4Y sur place pour rejoindre les lieux de logement; tu devras donc te déplacement uniquement en transport en commun.`,
         tags: ['c4y']
     },
     {
@@ -87,8 +88,8 @@ const faqs: FAQ[] = [
         tags: ['c4y']
     },
     {
-        question: "Où puis-je m'inscrire? Tu peux t'inscrire via ce formulaire :",
-        answer: `<a href="${links[REGISTER]}">Via ce formulaire</a>`,
+        question: "Où puis-je m'inscrire?",
+        answer: `Tu peux t'inscrire <a href="${links[REGISTER]}">via ce formulaire</a>`,
         tags: ['c4y']
     },
     {
@@ -103,7 +104,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Lisbonne est-elle une ville sûre?",
-        answer: `elon l'étude "Quality of Living 2019" du cabinet de conseil Mercer, Lisbonne est la 31ème ville la plus sûre au monde, ayant gagné 12 places dans ce classement depuis 2005. C'est aussi la capitale européenne la plus ensoleillée !`,
+        answer: `Selon l'étude "Quality of Living 2019" du cabinet de conseil Mercer, Lisbonne est la 31ème ville la plus sûre au monde, ayant gagné 12 places dans ce classement depuis 2005. C'est aussi la capitale européenne la plus ensoleillée !`,
         tags: ['logistique']
     },
     {
@@ -127,8 +128,18 @@ const faqs: FAQ[] = [
         tags: ['logistique']
     },
     {
+        question: "Puis-je participer aux JMJ si je présente un handicap moteur/sensoriel/intellectuel?",
+        answer: `Tout le monde est le bienvenu aux JMJ de Lisbonne 2023, et l’organisation travaille en détail sur les aspects logistiques de l’accueil des personnes en situation de handicap. Pour la route Church4You, nous ne pourrons malheureusement pas accueillir les pèlerins présentant un lourd handicap moteur car nos cars ne sont pas adaptés. Pour les demandes spécifiques, tu peux nous contacter par mail sur <a href="mailto:jmjbelgique@gmail.com">jmjbelgique@gmail.com</a>, et <a href="mailto:jmj4all@lisboa2023.org">jmj4all@lisboa2023.org</a> pour contacter directement l’organisation au Portugal.`,
+        tags: ['logistique']
+    },
+    {
+        question: "Je ne parle pas portugais, comment vais-je pouvoir participer aux activités?",
+        answer: `Il est prévu que les grands événements soient traduits en plusieurs langues, comme le français, l’anglais, ou la Langue des Signes internationale !`,
+        tags: ['logistique']
+    },
+    {
         question: "Comment allons-nous nous déplacer sur place?",
-        answer: `ous les transports en commun seront accessibles gratuitement pendant la durée des JMJ. Les pèlerins inscrits à la formule “All in” et “Express” pourront quant à eux bénéficier, dans la mesure du possible, des cars de la délégation afin de rejoindre les lieux de logements.`,
+        answer: `Tous les transports en commun seront accessibles gratuitement pendant la durée des JMJ. Les pèlerins inscrits à la formule “All in” pourront quant à eux bénéficier, dans la mesure du possible, des cars de la délégation afin de rejoindre les lieux de logements.`,
         tags: ['logistique']
     },
     {
@@ -143,7 +154,7 @@ const faqs: FAQ[] = [
         - 850€ pour la formule All in (950€ à partir du 10 mai) <br />
         - 450€ pour la formule Express (500 à partir du 10 mai) <br />
         - 350€ pour la formule Express sans transport`,
-        tags: ['money', 'c4y']
+        tags: ['money']
     },
     {
         question: "Comment puis-je payer mon inscription?",
@@ -168,6 +179,11 @@ const faqs: FAQ[] = [
         En second lieu à Church4You : <a href="jmjbelgique@gmail.com?subjet=Demande de bourse">jmjbelgique@gmail.com</a> (objet du mail: demande de bourse)<br />
         Toutes les demandes seront étudiées avec grande bienveillance afin de ne laisser personne au bord de la route.
         `,
+        tags: ['money']
+    },
+    {
+        question: "Je voudrais vendre des goodies pour m’aider à financer mon voyage, comment puis-je faire?",
+        answer: `Tu peux contacter ta pastorale des jeunes, ou ton groupe local, pour te procurer des bics et des bougies “jmj.be” à revendre.`,
         tags: ['money']
     }
 ]
