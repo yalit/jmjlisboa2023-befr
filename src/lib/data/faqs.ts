@@ -28,7 +28,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Quel est l'impact écologique d'un tel rassemblement?",
-        answer: `Les organisateurs mettent un point d’honneur à respecter l’environnement. Les JMJ Lisbonne 2023 seront encore plus durables si chacun des pèlerins, jusqu’au dernier à s'y inscrire, contribue à ce but. Nous avons besoin de tous et toutes nous mobiliser afin d'atteindre l'empreinte environnementale la plus faible possible. Vous pourrez retrouver la lettre d’engagement des organisateurs, publiées le 22 avril 2022, jour de la Terre: <a href="https://www.lisboa2023.org/fr/engagement-durabilite">https://www.lisboa2023.org/fr/engagement-durabilite</a>`,
+        answer: `Les organisateurs mettent un point d’honneur à respecter l’environnement. Les JMJ Lisbonne 2023 seront encore plus durables si chacun des pèlerins, jusqu’au dernier à s'y inscrire, contribue à ce but. Nous avons besoin de tous et toutes nous mobiliser afin d'atteindre l'empreinte environnementale la plus faible possible. Vous pourrez retrouver la lettre d’engagement des organisateurs, publiées le 22 avril 2022, jour de la Terre: <a href="https://www.lisboa2023.org/fr/engagement-durabilite" target="_blank">https://www.lisboa2023.org/fr/engagement-durabilite</a>`,
         tags: ['general']
     },
     {
@@ -43,7 +43,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Quels sont les symboles des JMJ?",
-        answer: `Les JMJ ont deux symboles qui accompagnent les pèlerins : la croix du pèlerin et l'icône de Notre-Dame Salus Populi Romani. Dans les mois qui précèdent chaque JMJ, les symboles partent en pèlerinage pour proclamer l'Evangile et accompagner les jeunes, de manière particulière, dans les réalités dans lesquelles ils vivent. Pour plus d'informations, visitez <a href="https://www.lisboa2023.org/en/about/the-symbols-of-wyd">lisboa2023.org/en/about/the-symbols-of-wyd</a>`,
+        answer: `Les JMJ ont deux symboles qui accompagnent les pèlerins : la croix du pèlerin et l'icône de Notre-Dame Salus Populi Romani. Dans les mois qui précèdent chaque JMJ, les symboles partent en pèlerinage pour proclamer l'Evangile et accompagner les jeunes, de manière particulière, dans les réalités dans lesquelles ils vivent. Pour plus d'informations, visitez <a href="https://www.lisboa2023.org/en/about/the-symbols-of-wyd" target="_blank">lisboa2023.org/en/about/the-symbols-of-wyd</a>`,
         tags: ['general']
     },
     {
@@ -58,7 +58,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Qui organise la route Church4you?",
-        answer: `Cette route est organisée par les équipes des Pastorales des Jeunes des diocèses francophones de Belgique et des communautés religieuses. <br />Voici la liste des communautés qui ont déjà choisi de partir avec nous: <br /><a href="${links[CHEMINNEUF]}">Communauté du Chemin Neuf</a>, <a href="${links[EMMANUEL]}">Emmanuel Belgique</a>, <a href="${links[TIBERIADE]}">la Fraternité de Tibériade</a>, <a href="${links[ASSOMPTION]}">les Assomptionnistes</a>, <a href="${links[ASSOMPTIONSOEUR]}">les religieuses de l'Assomption</a>, <a href="${links[FONDACIO]}">Fondacio</a>, <a href="${links[SERVITEURSDUSEIGNEUR]}">les Serviteurs de l'Amour et les Chercheurs De Dieu</a> et <a href="${links[MARIEJEUNESSE]}">la Famille Marie-Jeunesse</a>.`,
+        answer: `Cette route est organisée par les équipes des Pastorales des Jeunes des diocèses francophones de Belgique et des communautés religieuses. <br />Voici la liste des communautés qui ont déjà choisi de partir avec nous: <br /><a href="${links[CHEMINNEUF]}" target="_blank">Communauté du Chemin Neuf</a>, <a href="${links[EMMANUEL]}" target="_blank">Emmanuel Belgique</a>, <a href="${links[TIBERIADE]}" target="_blank">la Fraternité de Tibériade</a>, <a href="${links[ASSOMPTION]}" target="_blank">les Assomptionnistes</a>, <a href="${links[ASSOMPTIONSOEUR]}" target="_blank">les religieuses de l'Assomption</a>, <a href="${links[FONDACIO]}" target="_blank">Fondacio</a>, <a href="${links[SERVITEURSDUSEIGNEUR]}" target="_blank">les Serviteurs de l'Amour et les Chercheurs De Dieu</a> et <a href="${links[MARIEJEUNESSE]}" target="_blank">la Famille Marie-Jeunesse</a>.`,
         tags: ['c4y']
     },
     {
@@ -73,7 +73,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "J'ai plus de 30 ans, comment puis-je participer aux JMJ? ",
-        answer: `Tu peux te joindre à la route Church4you en tant qu'animateur/trice d'un groupe de jeunes. Contacte ta pastorale des jeunes pour savoir où tu peux te rendre utile ! Il est possible également de participer aux JMJ comme volontaire.<br /><a href="https://register.wyd-reg.org/vol/wizard?lang=fr">Tu peux déposer une demande d'inscriptions ici</a>`,
+        answer: `Tu peux te joindre à la route Church4you en tant qu'animateur/trice d'un groupe de jeunes. Contacte ta pastorale des jeunes pour savoir où tu peux te rendre utile ! Il est possible également de participer aux JMJ comme volontaire.<br /><a href="https://register.wyd-reg.org/vol/wizard?lang=fr" target="_blank">Tu peux déposer une demande d'inscriptions ici</a>`,
         tags: ['c4y']
     },
     {
@@ -89,7 +89,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Où puis-je m'inscrire?",
-        answer: `Tu peux t'inscrire <a href="${links[REGISTER]}">via ce formulaire</a>`,
+        answer: `Tu peux t'inscrire <a href="${links[REGISTER]}" target="_blank">via ce formulaire</a>`,
         tags: ['c4y']
     },
     {
@@ -99,7 +99,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Je me suis inscrit(e), mais je n'ai pas terminé de compléter mon profil. Comment puis-je faire?",
-        answer: `Tu peux compléter ton profil personnel ici :  <a href="https://registration-wyd2023.chemin-neuf.org/fr/login/">https://registration-wyd2023.chemin-neuf.org/fr/login/</a>.`,
+        answer: `Tu peux compléter ton profil personnel ici :  <a href="https://registration-wyd2023.chemin-neuf.org/fr/login/" target="_blank">https://registration-wyd2023.chemin-neuf.org/fr/login/</a>.`,
         tags: ['c4y']
     },
     {
@@ -114,12 +114,12 @@ const faqs: FAQ[] = [
     },
     {
         question: "Où auront lieu les grands rassemblements de la semaine JMJ?",
-        answer: `Les événements centraux auront lieu au Parque Tejo. Toutes les informations disponibles sur les événements centraux peuvent être trouvées <& href="https://www.lisboa2023.org/fr/evenements-centraux">ici</a>.`,
+        answer: `Les événements centraux auront lieu au Parque Tejo. Toutes les informations disponibles sur les événements centraux peuvent être trouvées <a href="https://www.lisboa2023.org/fr/evenements-centraux" target="_blank">ici</a>.`,
         tags: ['logistique']
     },
     {
         question: "Quel est le programme de la semaine JMJ?",
-        answer: `Le programme officiel est toujours en cours d'élaboration. Tu peux suivre son évolution et voir l'état actuel du programme en cliquant ici : <a href="https://www.lisboa2023.org/fr/programme">https://www.lisboa2023.org/fr/programme</a>`,
+        answer: `Le programme officiel est toujours en cours d'élaboration. Tu peux suivre son évolution et voir l'état actuel du programme en cliquant ici : <a href="https://www.lisboa2023.org/fr/programme" target="_blank">https://www.lisboa2023.org/fr/programme</a>`,
         tags: ['logistique']
     },
     {
@@ -158,7 +158,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Comment puis-je payer mon inscription?",
-        answer: `Tu peux payer ton inscription directement sur ton profil utilisateur, juste ici : <a href="https://registration-wyd2023.chemin-neuf.org/fr/login/">https://registration-wyd2023.chemin-neuf.org/fr/login/</a>. <br />Le système est sécurisé et te permet de payer avec ta carte bancaire ou ta carte de crédit.`,
+        answer: `Tu peux payer ton inscription directement sur ton profil utilisateur, juste ici : <a href="https://registration-wyd2023.chemin-neuf.org/fr/login/" target="_blank">https://registration-wyd2023.chemin-neuf.org/fr/login/</a>. <br />Le système est sécurisé et te permet de payer avec ta carte bancaire ou ta carte de crédit.`,
         tags: ['money']
     },
     {
@@ -173,10 +173,10 @@ const faqs: FAQ[] = [
     },
     {
         question: "Je souhaite vraiment participer, mais j'aurais besoin d'un coup de pouce financier, que puis-je faire?",
-        answer: `Tu peux retrouver des idées pour t'aider à financer tes JMJ ici : <a href="https://church4you.be/bruxelles/news/des-idees-pour-financer-les-jmj/">https://church4you.be/bruxelles/news/des-idees-pour-financer-les-jmj/</a><br /> 
+        answer: `Tu peux retrouver des idées pour t'aider à financer tes JMJ ici : <a href="https://church4you.be/bruxelles/news/des-idees-pour-financer-les-jmj/" target="_blank">https://church4you.be/bruxelles/news/des-idees-pour-financer-les-jmj/</a><br /> 
         L'argent ne doit pas être un frein. Si tu es en difficulté, tu peux adresser une demande de soutien: <br />
         En premier lieu : au responsable de ton groupe et/ou pastorale des jeunes de ton diocèse.<br />
-        En second lieu à Church4You : <a href="jmjbelgique@gmail.com?subjet=Demande de bourse">jmjbelgique@gmail.com</a> (objet du mail: demande de bourse)<br />
+        En second lieu à Church4You : <a href="mailto:jmjbelgique@gmail.com?subject=Demande de bourse">jmjbelgique@gmail.com</a> (objet du mail: demande de bourse)<br />
         Toutes les demandes seront étudiées avec grande bienveillance afin de ne laisser personne au bord de la route.
         `,
         tags: ['money']
