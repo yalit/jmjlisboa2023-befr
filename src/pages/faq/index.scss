@@ -1,20 +1,6 @@
 @import "../../_base.scss";
 
 nav {
-    .text_part {
-        .hookup {
-            font-size: 2rem;
-            & > div {
-                padding-left: 0.3rem;
-            }
-            .big {
-                font-size: 8rem;
-                margin-bottom: -2rem;
-                padding-left: 0;
-            }
-        }
-    }
-
     .main {
         .image {
             svg {
@@ -22,6 +8,39 @@ nav {
                 bottom: 15%;
                 right: 10%;
                 width: 65%;
+            }
+        }
+    }
+
+    .text_part {
+        color: white;
+        .hookup {
+            & > div {
+                padding-left: 0.3rem;
+            }
+            .big {
+                font-size: calc(var(--medium) * 4);
+                margin-bottom: calc(var(--medium) * -1);
+                padding-left: 0;
+            }
+        }
+    }
+    
+    @media screen and (min-width: $mediaSmall) {
+        .text_part {
+            position: absolute;
+            top: 35vh;
+        }
+    }
+    
+    @media screen and (min-width: $mediaLarge) {
+        .text_part {
+            top: 40vh;
+            .hookup {
+                .big  {
+                    font-size: calc(var(--large) * 5);
+                    margin-bottom:calc(var(--medium) * -1.5);
+                }
             }
         }
     }
