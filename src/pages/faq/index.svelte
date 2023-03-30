@@ -4,7 +4,7 @@
     import Page from "../page/page.svelte";
     import { faArrowTurnDown } from "@fortawesome/free-solid-svg-icons";
     import { FontAwesomeIcon } from "@fortawesome/svelte-fontawesome";
-    import links, { CHURCH4YOU } from "../../lib/data/links";
+    import links, { CHURCH4YOU, REGISTER } from "../../lib/data/links";
     import Faq from "./faq.svelte";
     import FaqTab from "./FAQTab.svelte";
     import { tagIDs, tags, type TagId } from "../../lib/data/faqs";
@@ -43,10 +43,10 @@
             <div class="actions">
                 <div class="action none"></div>
                 <div class="action">
-                    <span>Tu ne pars pas aux JMJ ? </span> <FontAwesomeIcon icon={faArrowTurnDown} />
+                    <span>Tu n'as plus de questions ? </span> <FontAwesomeIcon icon={faArrowTurnDown} />
                 </div>
                 <div class="action">
-                    <a href="{links[CHURCH4YOU]}" target="_blank" rel="noreferrer">Découvre d'autres activités, groupes et outils sur Church4You.be</a>
+                    <a href="{links[REGISTER]}" target="_blank" rel="noreferrer">Enregistres toi directement !</a>
                 </div>
             </div>
         </div>

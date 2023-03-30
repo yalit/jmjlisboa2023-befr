@@ -28,7 +28,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Quel est l'impact écologique d'un tel rassemblement?",
-        answer: `Les organisateurs mettent un point d’honneur à respecter l’environnement. Les JMJ Lisbonne 2023 seront encore plus durables si chacun des pèlerins, jusqu’au dernier à s'y inscrire, contribue à ce but. Nous avons besoin de tous et toutes nous mobiliser afin d'atteindre l'empreinte environnementale la plus faible possible. Vous pourrez retrouver la lettre d’engagement des organisateurs, publiées le 22 avril 2022, jour de la Terre: <a href="https://www.lisboa2023.org/fr/engagement-durabilite" target="_blank">https://www.lisboa2023.org/fr/engagement-durabilite</a>`,
+        answer: `Les organisateurs mettent un point d’honneur à respecter l’environnement. Les JMJ Lisbonne 2023 seront encore plus durables si chacun des pèlerins, jusqu’au dernier à s'y inscrire, contribue à ce but. Nous avons besoin de tous et toutes nous mobiliser afin d'atteindre l'empreinte environnementale la plus faible possible. Vous pourrez retrouver la lettre d’engagement des organisateurs, publiée le 22 avril 2022, jour de la Terre: <a href="https://www.lisboa2023.org/fr/engagement-durabilite" target="_blank">https://www.lisboa2023.org/fr/engagement-durabilite</a>`,
         tags: ['general']
     },
     {
@@ -53,7 +53,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Quels sont les dates du voyage?",
-        answer: `La route Church4you organise 2 départs pour les JMJ. <br />Le 24 juillet pour la formule All In, le 29 juillet pour la formule Express. <br />Les deux groupes reviendront en Belgique le 8 août. Ceux qui souhaitent nous rejoindre par leurs propres moyens doivent arriver à Lisbonne le 31 juillet avant 19h, et pourront repartir dès la fin des JMJ le 6 août.`,
+        answer: `La route Church4you organise 2 départs pour les JMJ. <br />Le 24 juillet pour la formule All In, le 29 juillet pour la formule Express. <br />Les deux groupes reviendront en Belgique le 8 août. Ceux qui souhaitent nous rejoindre par leurs propres moyens doivent arriver à Lisbonne le 31 juillet avant 18h, et pourront repartir dès la fin des JMJ le 6 août.`,
         tags: ['c4y']
     },
     {
@@ -73,13 +73,13 @@ const faqs: FAQ[] = [
     },
     {
         question: "J'ai plus de 30 ans, comment puis-je participer aux JMJ? ",
-        answer: `Tu peux te joindre à la route Church4you en tant qu'animateur/trice d'un groupe de jeunes. Contacte ta pastorale des jeunes pour savoir où tu peux te rendre utile ! Il est possible également de participer aux JMJ comme volontaire.<br /><a href="https://register.wyd-reg.org/vol/wizard?lang=fr" target="_blank">Tu peux déposer une demande d'inscriptions ici</a>`,
+        answer: `Tu peux te joindre à la route Church4you en tant qu'animateur/trice d'un groupe de jeunes. Contacte ta pastorale des jeunes pour savoir où tu peux te rendre utile ! Il est possible également de participer aux JMJ comme volontaire.<br /><a href="https://register.wyd-reg.org/vol/wizard?lang=fr" target="_blank">Tu peux déposer une demande d'inscription ici</a>`,
         tags: ['c4y']
     },
     {
         question: "Je souhaite vous rejoindre par mes propres moyens sur place, est-ce possible?",
         answer: `C’est possible sous certaines conditions avec l’option Express, sans transport. <br />
-        En choisissant cette option, tu t’engages à rejoindre la délégation C4Y le 31/07 fin d’après-midi (non négociable) à Lisbonne, au lieu qui sera communiqué. Tu pourras repartir par tes propres moyens à partir du 6 août (après la messe finale). Si tu es mineur (âgé de 16 ou 17 ans révolu le jour du départ), tu devras voyager avec le responsable légal de ton groupe pendant tout le séjour. Attention, tu ne pourras pas utiliser les cars de C4Y sur place pour rejoindre les lieux de logement; tu devras donc te déplacement uniquement en transport en commun.`,
+        En choisissant cette option, tu t’engages à rejoindre la délégation C4Y le 31/07 fin d’après-midi (non négociable) à Lisbonne, au lieu qui sera communiqué. Tu pourras repartir par tes propres moyens à partir du 6 août (après la messe finale). Si tu es mineur (âgé de 16 ou 17 ans révolu le jour du départ), tu devras voyager avec le responsable légal de ton groupe pendant tout le séjour. Attention, tu ne pourras pas utiliser les cars de C4Y sur place pour rejoindre les lieux de logement; tu devras donc te déplacer uniquement en transport en commun.`,
         tags: ['c4y']
     },
     {
@@ -139,7 +139,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Comment allons-nous nous déplacer sur place?",
-        answer: `Tous les transports en commun seront accessibles gratuitement pendant la durée des JMJ. Les pèlerins inscrits à la formule “All in” pourront quant à eux bénéficier, dans la mesure du possible, des cars de la délégation afin de rejoindre les lieux de logements.`,
+        answer: `Tous les transports en commun seront accessibles gratuitement pendant la durée des JMJ. Les pèlerins inscrits à la formule “All in” et "Express avec transport" pourront quant à eux bénéficier, dans la mesure du possible, des cars de la délégation afin de rejoindre les lieux de logement.`,
         tags: ['logistique']
     },
     {
