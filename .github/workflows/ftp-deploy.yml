@@ -44,7 +44,7 @@ jobs:
     - name: 📂 Deploy to FTP
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: $FTP_SERVER
-        username: $FTP_USERNAME
+        server: ${{ vars.FTP_SERVER }}
+        username: ${{ vars.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
-        server-dir: $FTP_SERVERDIR
+        server-dir: ${{ vars.FTP_SERVERDIR }}
