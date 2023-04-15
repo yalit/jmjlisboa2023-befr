@@ -46,7 +46,7 @@
                     <span>Tu n'as plus de questions ? </span> <FontAwesomeIcon icon={faArrowTurnDown} />
                 </div>
                 <div class="action">
-                    <a href="{links[REGISTER]}" target="_blank" rel="noreferrer">Enregistres toi directement !</a>
+                    <a href="{links[REGISTER]}" target="_blank" rel="noreferrer">Enregistre-toi directement !</a>
                 </div>
             </div>
         </div>
