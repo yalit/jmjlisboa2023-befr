@@ -94,7 +94,7 @@ const faqs: FAQ[] = [
     },
     {
         question: "Quelle est la date limite d'inscription?",
-        answer: `Le 10 juin. <br />Mais attention, à partir du 10 mai, le prix augmente pour les deux formules : il passe de 850€ à 950€ pour la formule All in, et de 450€ à 500€ pour la formule Express.`,
+        answer: `Le 10 juin. <br />Mais attention, à partir du 10 mai, le prix augmente pour les deux formules : il passe de 850€ à 950€ pour la formule All in, et de 450€ à 550€ pour la formule Express.`,
         tags: ['c4y']
     },
     {
@@ -152,7 +152,7 @@ const faqs: FAQ[] = [
         answer: `La semaine des JMJ seule coûte 245€, à cela doivent s'ajouter les frais de logistique et de transport. <br />
         Voici les tarifs des formules de la route Church4you: <br />
         - 850€ pour la formule All in (950€ à partir du 10 mai) <br />
-        - 450€ pour la formule Express (500 à partir du 10 mai) <br />
+        - 450€ pour la formule Express (550€ à partir du 10 mai) <br />
         - 350€ pour la formule Express sans transport`,
         tags: ['money']
     },
